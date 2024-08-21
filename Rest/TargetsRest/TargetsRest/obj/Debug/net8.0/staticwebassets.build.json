@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "YhegrWQBHyp43fgEPiMTACrbydNpa/bzgltR/k/wjEw=",
+  "Source": "TargetsRest",
+  "BasePath": "_content/TargetsRest",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

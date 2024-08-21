@@ -1,4 +1,7 @@
 
+using TargetsRest.Data;
+using TargetsRest.Services;
+
 namespace TargetsRest
 {
     public class Program
@@ -13,6 +16,8 @@ namespace TargetsRest
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen();
+            builder.Services.AddDbContext<ApplicationDbContext>();
+            builder.Services.AddScoped<ITargetService, TargetService>();
 
             var app = builder.Build();
 
