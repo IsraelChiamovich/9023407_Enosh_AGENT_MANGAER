@@ -8,7 +8,7 @@ namespace TargetsRest.Services
 {
     public class TargetService(ApplicationDbContext context) : ITargetService
     {
-        private readonly Dictionary<string, (int x, int y)> directions = new()
+        private readonly Dictionary<string, (int X, int Y)> directions = new()
         {
             { "n",  (0, -1) },  // צפון
             { "s",  (0,  1) },  // דרום
@@ -60,13 +60,35 @@ namespace TargetsRest.Services
             var target = await GetTargetByIdAsync(targetId);
             if (target == null)
             {
-                throw new Exception("Agent not found");
+                throw new Exception("Target not found");
             }
 
-            if (directions.TryGetValue(direction.Direction, out var move))
+            CheckIfAgentIsActive(target);
+
+            return await MoveTargetPosition(target, direction);
+        }
+
+        private void CheckIfAgentIsActive(TargetModel target)
+        {
+            if (target.Status == TargetStatus.Eliminated || target.Status == TargetStatus.associatedMission)
             {
-                target.x += move.x;
-                target.y += move.y;
+                throw new Exception("The target is eliminated or Associated with a mission and cannot be moved.");
+            }
+        }
+
+        private async Task<TargetModel?> MoveTargetPosition(TargetModel target, MoveDto moveDto)
+        {
+            if (directions.TryGetValue(moveDto.Direction, out var move))
+            {
+                if (target.x > 1 && target.x < 999)
+                {
+                    target.x += move.X;
+                }
+                if (target.y > 1 && target.y < 999)
+                {
+                    target.y += move.Y;
+                }
+
                 await context.SaveChangesAsync();
                 return target;
             }
@@ -75,9 +97,15 @@ namespace TargetsRest.Services
                 throw new Exception("Invalid direction");
             }
 
-
         }
-        
+
+        Task<TargetModel?> ITargetService.MoveTargetPosition(TargetModel target, MoveDto moveDto)
+        {
+            throw new NotImplementedException();
+        }
+
+
+
 
         /*public async Task<UserModel> AuthenticateAsync(string email, string password)
         {

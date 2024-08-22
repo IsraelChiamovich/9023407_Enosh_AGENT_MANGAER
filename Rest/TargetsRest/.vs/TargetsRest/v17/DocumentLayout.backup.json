@@ -3,72 +3,28 @@
   "WorkspaceRootPath": "C:\\Users\\user\\Desktop\\idf kodcode\\c#\\Final exam project\\Rest\\TargetsRest\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\user\\Desktop\\idf kodcode\\c#\\Final exam project\\Rest\\TargetsRest\\TargetsRest\\Migrations\\20240822132601_InitialCreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:TargetsRest\\Migrations\\20240822132601_InitialCreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{025CECB3-AFE9-4C64-A19A-28013E6DB478}|TargetsRest\\TargetsRest.csproj|c:\\users\\user\\desktop\\idf kodcode\\c#\\final exam project\\rest\\targetsrest\\targetsrest\\models\\targetmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{025CECB3-AFE9-4C64-A19A-28013E6DB478}|TargetsRest\\TargetsRest.csproj|solutionrelative:targetsrest\\models\\targetmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{025CECB3-AFE9-4C64-A19A-28013E6DB478}|TargetsRest\\TargetsRest.csproj|c:\\users\\user\\desktop\\idf kodcode\\c#\\final exam project\\rest\\targetsrest\\targetsrest\\dto\\targetdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{025CECB3-AFE9-4C64-A19A-28013E6DB478}|TargetsRest\\TargetsRest.csproj|solutionrelative:targetsrest\\dto\\targetdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{025CECB3-AFE9-4C64-A19A-28013E6DB478}|TargetsRest\\TargetsRest.csproj|c:\\users\\user\\desktop\\idf kodcode\\c#\\final exam project\\rest\\targetsrest\\targetsrest\\controllers\\targetscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{025CECB3-AFE9-4C64-A19A-28013E6DB478}|TargetsRest\\TargetsRest.csproj|solutionrelative:targetsrest\\controllers\\targetscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\user\\Desktop\\idf kodcode\\c#\\Final exam project\\Rest\\TargetsRest\\TargetsRest\\Migrations\\20240822150530_initialCreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:TargetsRest\\Migrations\\20240822150530_initialCreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{025CECB3-AFE9-4C64-A19A-28013E6DB478}|TargetsRest\\TargetsRest.csproj|c:\\users\\user\\desktop\\idf kodcode\\c#\\final exam project\\rest\\targetsrest\\targetsrest\\services\\targetservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{025CECB3-AFE9-4C64-A19A-28013E6DB478}|TargetsRest\\TargetsRest.csproj|solutionrelative:targetsrest\\services\\targetservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{025CECB3-AFE9-4C64-A19A-28013E6DB478}|TargetsRest\\TargetsRest.csproj|c:\\users\\user\\desktop\\idf kodcode\\c#\\final exam project\\rest\\targetsrest\\targetsrest\\services\\agentsservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{025CECB3-AFE9-4C64-A19A-28013E6DB478}|TargetsRest\\TargetsRest.csproj|solutionrelative:targetsrest\\services\\agentsservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{025CECB3-AFE9-4C64-A19A-28013E6DB478}|TargetsRest\\TargetsRest.csproj|c:\\users\\user\\desktop\\idf kodcode\\c#\\final exam project\\rest\\targetsrest\\targetsrest\\controllers\\agentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{025CECB3-AFE9-4C64-A19A-28013E6DB478}|TargetsRest\\TargetsRest.csproj|solutionrelative:targetsrest\\controllers\\agentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{025CECB3-AFE9-4C64-A19A-28013E6DB478}|TargetsRest\\TargetsRest.csproj|c:\\users\\user\\desktop\\idf kodcode\\c#\\final exam project\\rest\\targetsrest\\targetsrest\\services\\iagentsservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{025CECB3-AFE9-4C64-A19A-28013E6DB478}|TargetsRest\\TargetsRest.csproj|solutionrelative:targetsrest\\services\\iagentsservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{025CECB3-AFE9-4C64-A19A-28013E6DB478}|TargetsRest\\TargetsRest.csproj|c:\\users\\user\\desktop\\idf kodcode\\c#\\final exam project\\rest\\targetsrest\\targetsrest\\dto\\movedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{025CECB3-AFE9-4C64-A19A-28013E6DB478}|TargetsRest\\TargetsRest.csproj|solutionrelative:targetsrest\\dto\\movedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{025CECB3-AFE9-4C64-A19A-28013E6DB478}|TargetsRest\\TargetsRest.csproj|c:\\users\\user\\desktop\\idf kodcode\\c#\\final exam project\\rest\\targetsrest\\targetsrest\\services\\itargetservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{025CECB3-AFE9-4C64-A19A-28013E6DB478}|TargetsRest\\TargetsRest.csproj|solutionrelative:targetsrest\\services\\itargetservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{025CECB3-AFE9-4C64-A19A-28013E6DB478}|TargetsRest\\TargetsRest.csproj|c:\\users\\user\\desktop\\idf kodcode\\c#\\final exam project\\rest\\targetsrest\\targetsrest\\dto\\positiondto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{025CECB3-AFE9-4C64-A19A-28013E6DB478}|TargetsRest\\TargetsRest.csproj|solutionrelative:targetsrest\\dto\\positiondto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{025CECB3-AFE9-4C64-A19A-28013E6DB478}|TargetsRest\\TargetsRest.csproj|c:\\users\\user\\desktop\\idf kodcode\\c#\\final exam project\\rest\\targetsrest\\targetsrest\\controllers\\targetscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{025CECB3-AFE9-4C64-A19A-28013E6DB478}|TargetsRest\\TargetsRest.csproj|solutionrelative:targetsrest\\controllers\\targetscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{025CECB3-AFE9-4C64-A19A-28013E6DB478}|TargetsRest\\TargetsRest.csproj|c:\\users\\user\\desktop\\idf kodcode\\c#\\final exam project\\rest\\targetsrest\\targetsrest\\models\\agentmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{025CECB3-AFE9-4C64-A19A-28013E6DB478}|TargetsRest\\TargetsRest.csproj|solutionrelative:targetsrest\\models\\agentmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{025CECB3-AFE9-4C64-A19A-28013E6DB478}|TargetsRest\\TargetsRest.csproj|c:\\users\\user\\desktop\\idf kodcode\\c#\\final exam project\\rest\\targetsrest\\targetsrest\\models\\targetmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{025CECB3-AFE9-4C64-A19A-28013E6DB478}|TargetsRest\\TargetsRest.csproj|solutionrelative:targetsrest\\models\\targetmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{025CECB3-AFE9-4C64-A19A-28013E6DB478}|TargetsRest\\TargetsRest.csproj|c:\\users\\user\\desktop\\idf kodcode\\c#\\final exam project\\rest\\targetsrest\\targetsrest\\controllers\\missionscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{025CECB3-AFE9-4C64-A19A-28013E6DB478}|TargetsRest\\TargetsRest.csproj|solutionrelative:targetsrest\\controllers\\missionscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{025CECB3-AFE9-4C64-A19A-28013E6DB478}|TargetsRest\\TargetsRest.csproj|c:\\users\\user\\desktop\\idf kodcode\\c#\\final exam project\\rest\\targetsrest\\targetsrest\\dto\\iddto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{025CECB3-AFE9-4C64-A19A-28013E6DB478}|TargetsRest\\TargetsRest.csproj|solutionrelative:targetsrest\\dto\\iddto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{025CECB3-AFE9-4C64-A19A-28013E6DB478}|TargetsRest\\TargetsRest.csproj|c:\\users\\user\\desktop\\idf kodcode\\c#\\final exam project\\rest\\targetsrest\\targetsrest\\dto\\agentdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{025CECB3-AFE9-4C64-A19A-28013E6DB478}|TargetsRest\\TargetsRest.csproj|solutionrelative:targetsrest\\dto\\agentdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{025CECB3-AFE9-4C64-A19A-28013E6DB478}|TargetsRest\\TargetsRest.csproj|c:\\users\\user\\desktop\\idf kodcode\\c#\\final exam project\\rest\\targetsrest\\targetsrest\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{025CECB3-AFE9-4C64-A19A-28013E6DB478}|TargetsRest\\TargetsRest.csproj|solutionrelative:targetsrest\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{025CECB3-AFE9-4C64-A19A-28013E6DB478}|TargetsRest\\TargetsRest.csproj|c:\\users\\user\\desktop\\idf kodcode\\c#\\final exam project\\rest\\targetsrest\\targetsrest\\services\\imissionsservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{025CECB3-AFE9-4C64-A19A-28013E6DB478}|TargetsRest\\TargetsRest.csproj|solutionrelative:targetsrest\\services\\imissionsservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{025CECB3-AFE9-4C64-A19A-28013E6DB478}|TargetsRest\\TargetsRest.csproj|c:\\users\\user\\desktop\\idf kodcode\\c#\\final exam project\\rest\\targetsrest\\targetsrest\\services\\agentsservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{025CECB3-AFE9-4C64-A19A-28013E6DB478}|TargetsRest\\TargetsRest.csproj|solutionrelative:targetsrest\\services\\agentsservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{025CECB3-AFE9-4C64-A19A-28013E6DB478}|TargetsRest\\TargetsRest.csproj|c:\\users\\user\\desktop\\idf kodcode\\c#\\final exam project\\rest\\targetsrest\\targetsrest\\services\\missionsservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -79,12 +35,56 @@
       "RelativeMoniker": "D:0:0:{025CECB3-AFE9-4C64-A19A-28013E6DB478}|TargetsRest\\TargetsRest.csproj|solutionrelative:targetsrest\\models\\missionmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{025CECB3-AFE9-4C64-A19A-28013E6DB478}|TargetsRest\\TargetsRest.csproj|c:\\users\\user\\desktop\\idf kodcode\\c#\\final exam project\\rest\\targetsrest\\targetsrest\\utils\\possitionutils.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{025CECB3-AFE9-4C64-A19A-28013E6DB478}|TargetsRest\\TargetsRest.csproj|solutionrelative:targetsrest\\utils\\possitionutils.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{025CECB3-AFE9-4C64-A19A-28013E6DB478}|TargetsRest\\TargetsRest.csproj|c:\\users\\user\\desktop\\idf kodcode\\c#\\final exam project\\rest\\targetsrest\\targetsrest\\controllers\\missionscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{025CECB3-AFE9-4C64-A19A-28013E6DB478}|TargetsRest\\TargetsRest.csproj|solutionrelative:targetsrest\\controllers\\missionscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{025CECB3-AFE9-4C64-A19A-28013E6DB478}|TargetsRest\\TargetsRest.csproj|c:\\users\\user\\desktop\\idf kodcode\\c#\\final exam project\\rest\\targetsrest\\targetsrest\\controllers\\agentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{025CECB3-AFE9-4C64-A19A-28013E6DB478}|TargetsRest\\TargetsRest.csproj|solutionrelative:targetsrest\\controllers\\agentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{025CECB3-AFE9-4C64-A19A-28013E6DB478}|TargetsRest\\TargetsRest.csproj|c:\\users\\user\\desktop\\idf kodcode\\c#\\final exam project\\rest\\targetsrest\\targetsrest\\dto\\positiondto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{025CECB3-AFE9-4C64-A19A-28013E6DB478}|TargetsRest\\TargetsRest.csproj|solutionrelative:targetsrest\\dto\\positiondto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{025CECB3-AFE9-4C64-A19A-28013E6DB478}|TargetsRest\\TargetsRest.csproj|c:\\users\\user\\desktop\\idf kodcode\\c#\\final exam project\\rest\\targetsrest\\targetsrest\\models\\agentmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{025CECB3-AFE9-4C64-A19A-28013E6DB478}|TargetsRest\\TargetsRest.csproj|solutionrelative:targetsrest\\models\\agentmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{025CECB3-AFE9-4C64-A19A-28013E6DB478}|TargetsRest\\TargetsRest.csproj|c:\\users\\user\\desktop\\idf kodcode\\c#\\final exam project\\rest\\targetsrest\\targetsrest\\dto\\agentdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{025CECB3-AFE9-4C64-A19A-28013E6DB478}|TargetsRest\\TargetsRest.csproj|solutionrelative:targetsrest\\dto\\agentdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{025CECB3-AFE9-4C64-A19A-28013E6DB478}|TargetsRest\\TargetsRest.csproj|c:\\users\\user\\desktop\\idf kodcode\\c#\\final exam project\\rest\\targetsrest\\targetsrest\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{025CECB3-AFE9-4C64-A19A-28013E6DB478}|TargetsRest\\TargetsRest.csproj|solutionrelative:targetsrest\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{025CECB3-AFE9-4C64-A19A-28013E6DB478}|TargetsRest\\TargetsRest.csproj|c:\\users\\user\\desktop\\idf kodcode\\c#\\final exam project\\rest\\targetsrest\\targetsrest\\dto\\targetdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{025CECB3-AFE9-4C64-A19A-28013E6DB478}|TargetsRest\\TargetsRest.csproj|solutionrelative:targetsrest\\dto\\targetdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{025CECB3-AFE9-4C64-A19A-28013E6DB478}|TargetsRest\\TargetsRest.csproj|c:\\users\\user\\desktop\\idf kodcode\\c#\\final exam project\\rest\\targetsrest\\targetsrest\\services\\iagentsservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{025CECB3-AFE9-4C64-A19A-28013E6DB478}|TargetsRest\\TargetsRest.csproj|solutionrelative:targetsrest\\services\\iagentsservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{025CECB3-AFE9-4C64-A19A-28013E6DB478}|TargetsRest\\TargetsRest.csproj|c:\\users\\user\\desktop\\idf kodcode\\c#\\final exam project\\rest\\targetsrest\\targetsrest\\dto\\movedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{025CECB3-AFE9-4C64-A19A-28013E6DB478}|TargetsRest\\TargetsRest.csproj|solutionrelative:targetsrest\\dto\\movedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{025CECB3-AFE9-4C64-A19A-28013E6DB478}|TargetsRest\\TargetsRest.csproj|c:\\users\\user\\desktop\\idf kodcode\\c#\\final exam project\\rest\\targetsrest\\targetsrest\\dto\\iddto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{025CECB3-AFE9-4C64-A19A-28013E6DB478}|TargetsRest\\TargetsRest.csproj|solutionrelative:targetsrest\\dto\\iddto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{025CECB3-AFE9-4C64-A19A-28013E6DB478}|TargetsRest\\TargetsRest.csproj|c:\\users\\user\\desktop\\idf kodcode\\c#\\final exam project\\rest\\targetsrest\\targetsrest\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{025CECB3-AFE9-4C64-A19A-28013E6DB478}|TargetsRest\\TargetsRest.csproj|solutionrelative:targetsrest\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{025CECB3-AFE9-4C64-A19A-28013E6DB478}|TargetsRest\\TargetsRest.csproj|c:\\users\\user\\desktop\\idf kodcode\\c#\\final exam project\\rest\\targetsrest\\targetsrest\\services\\imissionsservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{025CECB3-AFE9-4C64-A19A-28013E6DB478}|TargetsRest\\TargetsRest.csproj|solutionrelative:targetsrest\\services\\imissionsservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{025CECB3-AFE9-4C64-A19A-28013E6DB478}|TargetsRest\\TargetsRest.csproj|c:\\users\\user\\desktop\\idf kodcode\\c#\\final exam project\\rest\\targetsrest\\targetsrest\\utils\\possitionutils.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{025CECB3-AFE9-4C64-A19A-28013E6DB478}|TargetsRest\\TargetsRest.csproj|solutionrelative:targetsrest\\utils\\possitionutils.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\user\\Desktop\\idf kodcode\\c#\\Final exam project\\Rest\\TargetsRest\\TargetsRest\\Migrations\\20240822061544_InitialCreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -107,14 +107,92 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "20240822132601_InitialCreate.cs",
-              "DocumentMoniker": "C:\\Users\\user\\Desktop\\idf kodcode\\c#\\Final exam project\\Rest\\TargetsRest\\TargetsRest\\Migrations\\20240822132601_InitialCreate.cs",
-              "RelativeDocumentMoniker": "TargetsRest\\Migrations\\20240822132601_InitialCreate.cs",
-              "ToolTip": "C:\\Users\\user\\Desktop\\idf kodcode\\c#\\Final exam project\\Rest\\TargetsRest\\TargetsRest\\Migrations\\20240822132601_InitialCreate.cs",
-              "RelativeToolTip": "TargetsRest\\Migrations\\20240822132601_InitialCreate.cs",
+              "Title": "20240822150530_initialCreate.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\idf kodcode\\c#\\Final exam project\\Rest\\TargetsRest\\TargetsRest\\Migrations\\20240822150530_initialCreate.cs",
+              "RelativeDocumentMoniker": "TargetsRest\\Migrations\\20240822150530_initialCreate.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\idf kodcode\\c#\\Final exam project\\Rest\\TargetsRest\\TargetsRest\\Migrations\\20240822150530_initialCreate.cs",
+              "RelativeToolTip": "TargetsRest\\Migrations\\20240822150530_initialCreate.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-22T13:26:01.766Z",
+              "WhenOpened": "2024-08-22T15:05:30.663Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "TargetService.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\idf kodcode\\c#\\Final exam project\\Rest\\TargetsRest\\TargetsRest\\Services\\TargetService.cs",
+              "RelativeDocumentMoniker": "TargetsRest\\Services\\TargetService.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\idf kodcode\\c#\\Final exam project\\Rest\\TargetsRest\\TargetsRest\\Services\\TargetService.cs",
+              "RelativeToolTip": "TargetsRest\\Services\\TargetService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-21T13:31:54.556Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "MissionModel.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\idf kodcode\\c#\\Final exam project\\Rest\\TargetsRest\\TargetsRest\\Models\\MissionModel.cs",
+              "RelativeDocumentMoniker": "TargetsRest\\Models\\MissionModel.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\idf kodcode\\c#\\Final exam project\\Rest\\TargetsRest\\TargetsRest\\Models\\MissionModel.cs",
+              "RelativeToolTip": "TargetsRest\\Models\\MissionModel.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAAwBMAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-21T11:15:20.99Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "TargetModel.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\idf kodcode\\c#\\Final exam project\\Rest\\TargetsRest\\TargetsRest\\Models\\TargetModel.cs",
+              "RelativeDocumentMoniker": "TargetsRest\\Models\\TargetModel.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\idf kodcode\\c#\\Final exam project\\Rest\\TargetsRest\\TargetsRest\\Models\\TargetModel.cs",
+              "RelativeToolTip": "TargetsRest\\Models\\TargetModel.cs",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAUwAkAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-21T11:13:49.303Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "MissionsController.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\idf kodcode\\c#\\Final exam project\\Rest\\TargetsRest\\TargetsRest\\Controllers\\MissionsController.cs",
+              "RelativeDocumentMoniker": "TargetsRest\\Controllers\\MissionsController.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\idf kodcode\\c#\\Final exam project\\Rest\\TargetsRest\\TargetsRest\\Controllers\\MissionsController.cs",
+              "RelativeToolTip": "TargetsRest\\Controllers\\MissionsController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-22T08:10:05.047Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ITargetService.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\idf kodcode\\c#\\Final exam project\\Rest\\TargetsRest\\TargetsRest\\Services\\ITargetService.cs",
+              "RelativeDocumentMoniker": "TargetsRest\\Services\\ITargetService.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\idf kodcode\\c#\\Final exam project\\Rest\\TargetsRest\\TargetsRest\\Services\\ITargetService.cs",
+              "RelativeToolTip": "TargetsRest\\Services\\ITargetService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAABHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-21T13:31:41.145Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "targetsController.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\idf kodcode\\c#\\Final exam project\\Rest\\TargetsRest\\TargetsRest\\Controllers\\targetsController.cs",
+              "RelativeDocumentMoniker": "TargetsRest\\Controllers\\targetsController.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\idf kodcode\\c#\\Final exam project\\Rest\\TargetsRest\\TargetsRest\\Controllers\\targetsController.cs",
+              "RelativeToolTip": "TargetsRest\\Controllers\\targetsController.cs",
+              "ViewState": "AgIAAEQAAAAAAAAAAAAjwFEAAABGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-22T12:10:54.275Z",
               "EditorCaption": ""
             },
             {
@@ -125,35 +203,35 @@
               "RelativeDocumentMoniker": "TargetsRest\\Services\\AgentsService.cs",
               "ToolTip": "C:\\Users\\user\\Desktop\\idf kodcode\\c#\\Final exam project\\Rest\\TargetsRest\\TargetsRest\\Services\\AgentsService.cs",
               "RelativeToolTip": "TargetsRest\\Services\\AgentsService.cs",
-              "ViewState": "AgIAACcAAAAAAAAAAAArwDgAAAAIAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAGMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-08-22T07:40:03.715Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "AgentModel.cs",
-              "DocumentMoniker": "C:\\Users\\user\\Desktop\\idf kodcode\\c#\\Final exam project\\Rest\\TargetsRest\\TargetsRest\\Models\\AgentModel.cs",
-              "RelativeDocumentMoniker": "TargetsRest\\Models\\AgentModel.cs",
-              "ToolTip": "C:\\Users\\user\\Desktop\\idf kodcode\\c#\\Final exam project\\Rest\\TargetsRest\\TargetsRest\\Models\\AgentModel.cs",
-              "RelativeToolTip": "TargetsRest\\Models\\AgentModel.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAcwBMAAAA2AAAAAAAAAA==",
+              "DocumentIndex": 6,
+              "Title": "MissionsService.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\idf kodcode\\c#\\Final exam project\\Rest\\TargetsRest\\TargetsRest\\Services\\MissionsService.cs",
+              "RelativeDocumentMoniker": "TargetsRest\\Services\\MissionsService.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\idf kodcode\\c#\\Final exam project\\Rest\\TargetsRest\\TargetsRest\\Services\\MissionsService.cs",
+              "RelativeToolTip": "TargetsRest\\Services\\MissionsService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADAAAAALAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-21T11:14:51.158Z",
+              "WhenOpened": "2024-08-22T08:10:35.943Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "TargetService.cs",
-              "DocumentMoniker": "C:\\Users\\user\\Desktop\\idf kodcode\\c#\\Final exam project\\Rest\\TargetsRest\\TargetsRest\\Services\\TargetService.cs",
-              "RelativeDocumentMoniker": "TargetsRest\\Services\\TargetService.cs",
-              "ToolTip": "C:\\Users\\user\\Desktop\\idf kodcode\\c#\\Final exam project\\Rest\\TargetsRest\\TargetsRest\\Services\\TargetService.cs",
-              "RelativeToolTip": "TargetsRest\\Services\\TargetService.cs",
-              "ViewState": "AgIAADYAAAAAAAAAAAAQwDoAAAAIAAAAAAAAAA==",
+              "DocumentIndex": 9,
+              "Title": "agentsController.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\idf kodcode\\c#\\Final exam project\\Rest\\TargetsRest\\TargetsRest\\Controllers\\agentsController.cs",
+              "RelativeDocumentMoniker": "TargetsRest\\Controllers\\agentsController.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\idf kodcode\\c#\\Final exam project\\Rest\\TargetsRest\\TargetsRest\\Controllers\\agentsController.cs",
+              "RelativeToolTip": "TargetsRest\\Controllers\\agentsController.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAmwAkAAAATAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-21T13:31:54.556Z",
+              "WhenOpened": "2024-08-22T07:39:29.311Z",
               "EditorCaption": ""
             },
             {
@@ -171,111 +249,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "TargetDto.cs",
-              "DocumentMoniker": "C:\\Users\\user\\Desktop\\idf kodcode\\c#\\Final exam project\\Rest\\TargetsRest\\TargetsRest\\Dto\\TargetDto.cs",
-              "RelativeDocumentMoniker": "TargetsRest\\Dto\\TargetDto.cs",
-              "ToolTip": "C:\\Users\\user\\Desktop\\idf kodcode\\c#\\Final exam project\\Rest\\TargetsRest\\TargetsRest\\Dto\\TargetDto.cs",
-              "RelativeToolTip": "TargetsRest\\Dto\\TargetDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-21T11:35:32.166Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "targetsController.cs",
-              "DocumentMoniker": "C:\\Users\\user\\Desktop\\idf kodcode\\c#\\Final exam project\\Rest\\TargetsRest\\TargetsRest\\Controllers\\targetsController.cs",
-              "RelativeDocumentMoniker": "TargetsRest\\Controllers\\targetsController.cs",
-              "ToolTip": "C:\\Users\\user\\Desktop\\idf kodcode\\c#\\Final exam project\\Rest\\TargetsRest\\TargetsRest\\Controllers\\targetsController.cs",
-              "RelativeToolTip": "TargetsRest\\Controllers\\targetsController.cs",
-              "ViewState": "AgIAAEkAAAAAAAAAAAAQwE4AAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-22T12:10:54.275Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "IAgentsService.cs",
-              "DocumentMoniker": "C:\\Users\\user\\Desktop\\idf kodcode\\c#\\Final exam project\\Rest\\TargetsRest\\TargetsRest\\Services\\IAgentsService.cs",
-              "RelativeDocumentMoniker": "TargetsRest\\Services\\IAgentsService.cs",
-              "ToolTip": "C:\\Users\\user\\Desktop\\idf kodcode\\c#\\Final exam project\\Rest\\TargetsRest\\TargetsRest\\Services\\IAgentsService.cs",
-              "RelativeToolTip": "TargetsRest\\Services\\IAgentsService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAABEAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-22T07:39:50.329Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "MoveDto.cs",
-              "DocumentMoniker": "C:\\Users\\user\\Desktop\\idf kodcode\\c#\\Final exam project\\Rest\\TargetsRest\\TargetsRest\\Dto\\MoveDto.cs",
-              "RelativeDocumentMoniker": "TargetsRest\\Dto\\MoveDto.cs",
-              "ToolTip": "C:\\Users\\user\\Desktop\\idf kodcode\\c#\\Final exam project\\Rest\\TargetsRest\\TargetsRest\\Dto\\MoveDto.cs",
-              "RelativeToolTip": "TargetsRest\\Dto\\MoveDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAIAAAARAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-22T07:14:57.82Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "TargetModel.cs",
-              "DocumentMoniker": "C:\\Users\\user\\Desktop\\idf kodcode\\c#\\Final exam project\\Rest\\TargetsRest\\TargetsRest\\Models\\TargetModel.cs",
-              "RelativeDocumentMoniker": "TargetsRest\\Models\\TargetModel.cs",
-              "ToolTip": "C:\\Users\\user\\Desktop\\idf kodcode\\c#\\Final exam project\\Rest\\TargetsRest\\TargetsRest\\Models\\TargetModel.cs",
-              "RelativeToolTip": "TargetsRest\\Models\\TargetModel.cs",
-              "ViewState": "AgIAAAEAAAAAAAAAAAAUwAkAAAATAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-21T11:13:49.303Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "agentsController.cs",
-              "DocumentMoniker": "C:\\Users\\user\\Desktop\\idf kodcode\\c#\\Final exam project\\Rest\\TargetsRest\\TargetsRest\\Controllers\\agentsController.cs",
-              "RelativeDocumentMoniker": "TargetsRest\\Controllers\\agentsController.cs",
-              "ToolTip": "C:\\Users\\user\\Desktop\\idf kodcode\\c#\\Final exam project\\Rest\\TargetsRest\\TargetsRest\\Controllers\\agentsController.cs",
-              "RelativeToolTip": "TargetsRest\\Controllers\\agentsController.cs",
-              "ViewState": "AgIAAD8AAAAAAAAAAAAEwE8AAAAMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-22T07:39:29.311Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "ITargetService.cs",
-              "DocumentMoniker": "C:\\Users\\user\\Desktop\\idf kodcode\\c#\\Final exam project\\Rest\\TargetsRest\\TargetsRest\\Services\\ITargetService.cs",
-              "RelativeDocumentMoniker": "TargetsRest\\Services\\ITargetService.cs",
-              "ToolTip": "C:\\Users\\user\\Desktop\\idf kodcode\\c#\\Final exam project\\Rest\\TargetsRest\\TargetsRest\\Services\\ITargetService.cs",
-              "RelativeToolTip": "TargetsRest\\Services\\ITargetService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAgAAAAaAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-21T13:31:41.145Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 12,
-              "Title": "MissionsController.cs",
-              "DocumentMoniker": "C:\\Users\\user\\Desktop\\idf kodcode\\c#\\Final exam project\\Rest\\TargetsRest\\TargetsRest\\Controllers\\MissionsController.cs",
-              "RelativeDocumentMoniker": "TargetsRest\\Controllers\\MissionsController.cs",
-              "ToolTip": "C:\\Users\\user\\Desktop\\idf kodcode\\c#\\Final exam project\\Rest\\TargetsRest\\TargetsRest\\Controllers\\MissionsController.cs",
-              "RelativeToolTip": "TargetsRest\\Controllers\\MissionsController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-22T08:10:05.047Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
               "Title": "AgentDto.cs",
               "DocumentMoniker": "C:\\Users\\user\\Desktop\\idf kodcode\\c#\\Final exam project\\Rest\\TargetsRest\\TargetsRest\\Dto\\AgentDto.cs",
               "RelativeDocumentMoniker": "TargetsRest\\Dto\\AgentDto.cs",
@@ -288,7 +262,68 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "AgentModel.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\idf kodcode\\c#\\Final exam project\\Rest\\TargetsRest\\TargetsRest\\Models\\AgentModel.cs",
+              "RelativeDocumentMoniker": "TargetsRest\\Models\\AgentModel.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\idf kodcode\\c#\\Final exam project\\Rest\\TargetsRest\\TargetsRest\\Models\\AgentModel.cs",
+              "RelativeToolTip": "TargetsRest\\Models\\AgentModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAA2AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-21T11:14:51.158Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 13,
+              "Title": "ApplicationDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\idf kodcode\\c#\\Final exam project\\Rest\\TargetsRest\\TargetsRest\\Data\\ApplicationDbContext.cs",
+              "RelativeDocumentMoniker": "TargetsRest\\Data\\ApplicationDbContext.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\idf kodcode\\c#\\Final exam project\\Rest\\TargetsRest\\TargetsRest\\Data\\ApplicationDbContext.cs",
+              "RelativeToolTip": "TargetsRest\\Data\\ApplicationDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-21T12:10:43.573Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "IAgentsService.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\idf kodcode\\c#\\Final exam project\\Rest\\TargetsRest\\TargetsRest\\Services\\IAgentsService.cs",
+              "RelativeDocumentMoniker": "TargetsRest\\Services\\IAgentsService.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\idf kodcode\\c#\\Final exam project\\Rest\\TargetsRest\\TargetsRest\\Services\\IAgentsService.cs",
+              "RelativeToolTip": "TargetsRest\\Services\\IAgentsService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAABEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-22T07:39:50.329Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "TargetDto.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\idf kodcode\\c#\\Final exam project\\Rest\\TargetsRest\\TargetsRest\\Dto\\TargetDto.cs",
+              "RelativeDocumentMoniker": "TargetsRest\\Dto\\TargetDto.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\idf kodcode\\c#\\Final exam project\\Rest\\TargetsRest\\TargetsRest\\Dto\\TargetDto.cs",
+              "RelativeToolTip": "TargetsRest\\Dto\\TargetDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-21T11:35:32.166Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "MoveDto.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\idf kodcode\\c#\\Final exam project\\Rest\\TargetsRest\\TargetsRest\\Dto\\MoveDto.cs",
+              "RelativeDocumentMoniker": "TargetsRest\\Dto\\MoveDto.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\idf kodcode\\c#\\Final exam project\\Rest\\TargetsRest\\TargetsRest\\Dto\\MoveDto.cs",
+              "RelativeToolTip": "TargetsRest\\Dto\\MoveDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAIAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-22T07:14:57.82Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
               "Title": "IdDto.cs",
               "DocumentMoniker": "C:\\Users\\user\\Desktop\\idf kodcode\\c#\\Final exam project\\Rest\\TargetsRest\\TargetsRest\\Dto\\IdDto.cs",
               "RelativeDocumentMoniker": "TargetsRest\\Dto\\IdDto.cs",
@@ -296,12 +331,11 @@
               "RelativeToolTip": "TargetsRest\\Dto\\IdDto.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-22T12:20:18.65Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-22T12:20:18.65Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 18,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\user\\Desktop\\idf kodcode\\c#\\Final exam project\\Rest\\TargetsRest\\TargetsRest\\Program.cs",
               "RelativeDocumentMoniker": "TargetsRest\\Program.cs",
@@ -309,12 +343,11 @@
               "RelativeToolTip": "TargetsRest\\Program.cs",
               "ViewState": "AgIAAAgAAAAAAAAAAAAjwBUAAAAOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-21T10:18:38.935Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-21T10:18:38.935Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 19,
               "Title": "IMissionsService.cs",
               "DocumentMoniker": "C:\\Users\\user\\Desktop\\idf kodcode\\c#\\Final exam project\\Rest\\TargetsRest\\TargetsRest\\Services\\IMissionsService.cs",
               "RelativeDocumentMoniker": "TargetsRest\\Services\\IMissionsService.cs",
@@ -322,38 +355,11 @@
               "RelativeToolTip": "TargetsRest\\Services\\IMissionsService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAlAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-22T08:10:23.936Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-22T08:10:23.936Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "MissionsService.cs",
-              "DocumentMoniker": "C:\\Users\\user\\Desktop\\idf kodcode\\c#\\Final exam project\\Rest\\TargetsRest\\TargetsRest\\Services\\MissionsService.cs",
-              "RelativeDocumentMoniker": "TargetsRest\\Services\\MissionsService.cs",
-              "ToolTip": "C:\\Users\\user\\Desktop\\idf kodcode\\c#\\Final exam project\\Rest\\TargetsRest\\TargetsRest\\Services\\MissionsService.cs",
-              "RelativeToolTip": "TargetsRest\\Services\\MissionsService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACIAAAACAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-22T08:10:35.943Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "MissionModel.cs",
-              "DocumentMoniker": "C:\\Users\\user\\Desktop\\idf kodcode\\c#\\Final exam project\\Rest\\TargetsRest\\TargetsRest\\Models\\MissionModel.cs",
-              "RelativeDocumentMoniker": "TargetsRest\\Models\\MissionModel.cs",
-              "ToolTip": "C:\\Users\\user\\Desktop\\idf kodcode\\c#\\Final exam project\\Rest\\TargetsRest\\TargetsRest\\Models\\MissionModel.cs",
-              "RelativeToolTip": "TargetsRest\\Models\\MissionModel.cs",
-              "ViewState": "AgIAAA8AAAAAAAAAAAAmwBgAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-21T11:15:20.99Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 20,
               "Title": "PossitionUtils.cs",
               "DocumentMoniker": "C:\\Users\\user\\Desktop\\idf kodcode\\c#\\Final exam project\\Rest\\TargetsRest\\TargetsRest\\Utils\\PossitionUtils.cs",
               "RelativeDocumentMoniker": "TargetsRest\\Utils\\PossitionUtils.cs",
@@ -361,21 +367,7 @@
               "RelativeToolTip": "TargetsRest\\Utils\\PossitionUtils.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAuAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-22T08:35:56.611Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "ApplicationDbContext.cs",
-              "DocumentMoniker": "C:\\Users\\user\\Desktop\\idf kodcode\\c#\\Final exam project\\Rest\\TargetsRest\\TargetsRest\\Data\\ApplicationDbContext.cs",
-              "RelativeDocumentMoniker": "TargetsRest\\Data\\ApplicationDbContext.cs",
-              "ToolTip": "C:\\Users\\user\\Desktop\\idf kodcode\\c#\\Final exam project\\Rest\\TargetsRest\\TargetsRest\\Data\\ApplicationDbContext.cs",
-              "RelativeToolTip": "TargetsRest\\Data\\ApplicationDbContext.cs",
-              "ViewState": "AgIAABIAAAAAAAAAAAAYwBgAAAAsAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-21T12:10:43.573Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-22T08:35:56.611Z"
             },
             {
               "$type": "Document",
@@ -387,8 +379,7 @@
               "RelativeToolTip": "TargetsRest\\Migrations\\20240822061544_InitialCreate.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-22T06:15:45.071Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-22T06:15:45.071Z"
             },
             {
               "$type": "Document",

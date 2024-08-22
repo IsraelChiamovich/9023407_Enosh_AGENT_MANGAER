@@ -61,19 +61,39 @@ namespace TargetsRest.Services
                 throw new Exception("Agent not found");
             }
 
-            if (directions.TryGetValue(direction.Direction, out var move))
-            {
-                agent.x += move.X;
-                agent.y += move.Y;
-                await context.SaveChangesAsync();
+            CheckIfAgentIsActive(agent);
 
+            return await MoveAgentPosition(agent, direction);
+        }
+
+        private void CheckIfAgentIsActive(AgentModel agent)
+        {
+            if (agent.Status == AgentStatus.activity)
+            {
+                throw new Exception("The agent is active and cannot be moved.");
+            }
+        }
+
+        private async Task<AgentModel?> MoveAgentPosition(AgentModel agent, MoveDto moveDto)
+        {
+            if (directions.TryGetValue(moveDto.Direction, out var move))
+            {
+                if (agent.x > 1 && agent.x < 999)
+                {
+                    agent.x += move.X;
+                }
+                if (agent.y > 1 && agent.y < 999)
+                {
+                    agent.y += move.X;
+                }
+
+                await context.SaveChangesAsync();
                 return agent;
             }
             else
             {
                 throw new Exception("Invalid direction");
             }
-
 
         }
 

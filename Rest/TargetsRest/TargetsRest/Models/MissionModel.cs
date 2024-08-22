@@ -17,7 +17,7 @@
         public AgentModel Agent { get; set; }
         public TargetModel Target { get; set; }
         public double TimeLeft { get; set; }
-        public DateTime ActualTime { get; set; }
+        public double ActualTime { get; set; }
         public MissionStatus MissionStatus { get; set; }
 
     }

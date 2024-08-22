@@ -9,6 +9,7 @@ namespace TargetsRest.Services
         Task<TargetModel> DeterminingAStartingPosition(int id, PositionDto possitionDto);
         Task<TargetModel?> GetTargetByIdAsync(int id);
         Task<List<TargetModel>> GetAllTargetsAsync();
+        Task<TargetModel?> MoveTargetPosition(TargetModel target, MoveDto moveDto);
         Task<TargetModel?> MoveTarget(int targetId, MoveDto direction);
 
         //Task<UserModel> AuthenticateAsync(string email, string password);

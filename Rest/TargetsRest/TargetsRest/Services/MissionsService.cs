@@ -1,4 +1,4 @@
-﻿/*using Microsoft.AspNetCore.Http.HttpResults;
+﻿using Microsoft.AspNetCore.Http.HttpResults;
 using TargetsRest.Data;
 using TargetsRest.Models;
 using TargetsRest.Utils;
@@ -7,7 +7,24 @@ namespace TargetsRest.Services
 {
     public class MissionsService(ApplicationDbContext context, ITargetService targetService, IAgentsService agentsService) : IMissionsService
     {
-        public async Task<List<MissionModel>> CreateMissionsIfConditionsExist()
+
+        /*public
+
+
+        private double CalculateTimeLeft(AgentModel agent, TargetModel target)
+        {
+            double distance = PossitionUtils.CalculateDistance(agent.x, agent.y, target.x, target.y);
+            return distance / 5.0;
+        }*/
+
+
+
+
+
+
+
+
+        /*public async Task<List<MissionModel>> CreateMissionsIfConditionsExist()
         {
             var a = await targetService.GetAllTargetsAsync();
             var b = await agentsService.GetAllAgentsAsync();
@@ -19,9 +36,9 @@ namespace TargetsRest.Services
             selectAllTargets...where Distance <= 200
             context.AddRangeAsync(Mission.MissionStatus = Proposal)
                 returen list MissionModel where MissionStatus = Proposal && TargetStatus.Live && AgentStatus.dormant
-        }
+        }*/
 
-        public Task<List<MissionModel>> GetAllMission()
+        /*public Task<List<MissionModel>> GetAllMission()
         {
 
         }
@@ -29,7 +46,6 @@ namespace TargetsRest.Services
         public Task<MissionModel> GetMissionById(int id)
         {
 
-        }
+        }*/
     }
 }
-*/
