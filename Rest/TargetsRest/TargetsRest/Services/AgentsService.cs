@@ -1,14 +1,13 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using System.Text.Json;
 using TargetsRest.Data;
 using TargetsRest.Dto;
 using TargetsRest.Models;
 
 namespace TargetsRest.Services
 {
-    public class TargetService(ApplicationDbContext context) : ITargetService
+    public class AgentsService(ApplicationDbContext context) : IAgentsService
     {
-        private readonly Dictionary<string, (int x, int y)> directions = new()
+        private readonly Dictionary<string, (int X, int Y)> directions = new()
         {
             { "n",  (0, -1) },  // צפון
             { "s",  (0,  1) },  // דרום
@@ -20,55 +19,55 @@ namespace TargetsRest.Services
             { "sw", (-1, 1) },  // דרום-מערב
         };
 
-        public async Task<int> CreateTargetAsync(TargetDto targetDto)
+        public async Task<int> CreateAgentAsync(AgentDto agentDto)
         {
-            TargetModel target = new()
+            AgentModel agent = new()
             {
-                Name = targetDto.Name,
-                ImageLink = targetDto.PhotoUrl,
-                Role = targetDto.Position,
-                Status = TargetStatus.Live
+                NickName = agentDto.Nickname,
+                ImageLink = agentDto.PhotoUrl,
+                Status = AgentStatus.dormant
             };
 
-            await context.Targets.AddAsync(target);
+            await context.Agents.AddAsync(agent);
             await context.SaveChangesAsync();
-            return target.Id;
+            return agent.Id;
 
         }
 
-        public async Task<TargetModel?> GetTargetByIdAsync(int id) =>
-            await context.Targets.FindAsync(id);
+        public async Task<AgentModel?> GetAgentByIdAsync(int id) =>
+            await context.Agents.FindAsync(id);
 
-        public async Task<List<TargetModel>> GetAllTargetsAsync() =>
-            await context.Targets.ToListAsync();
+        public async Task<List<AgentModel>> GetAllAgentsAsync() =>
+            await context.Agents.ToListAsync();
 
-        public async Task<TargetModel> DeterminingAStartingPosition(int id, PositionDto possitionDto)
+        public async Task<AgentModel> DeterminingAStartingPosition(int id, PositionDto possitionDto)
         {
-            var target = await GetTargetByIdAsync(id);
-            if (target == null)
+            var agent = await GetAgentByIdAsync(id);
+            if (agent == null)
             {
-                throw new Exception("Target not found");
+                throw new Exception("Agent not found");
             }
-            target.x = possitionDto.x;
-            target.y = possitionDto.y;
+            agent.x = possitionDto.x;
+            agent.y = possitionDto.y;
             await context.SaveChangesAsync();
-            return target;
+            return agent;
         }
 
-        public async Task<TargetModel?> MoveTarget(int targetId, MoveDto direction)
+        public async Task<AgentModel?> MoveAgent(int agentId, MoveDto direction)
         {
-            var target = await GetTargetByIdAsync(targetId);
-            if (target == null)
+            var agent = await GetAgentByIdAsync(agentId);
+            if (agent == null)
             {
                 throw new Exception("Agent not found");
             }
 
             if (directions.TryGetValue(direction.Direction, out var move))
             {
-                target.x += move.x;
-                target.y += move.y;
+                agent.x += move.X;
+                agent.y += move.Y;
                 await context.SaveChangesAsync();
-                return target;
+
+                return agent;
             }
             else
             {
@@ -77,7 +76,7 @@ namespace TargetsRest.Services
 
 
         }
-        
+
 
         /*public async Task<UserModel> AuthenticateAsync(string email, string password)
         {

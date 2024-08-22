@@ -38,8 +38,9 @@ namespace TargetsRest.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int>("Status")
-                        .HasColumnType("int");
+                    b.Property<string>("Status")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<int>("x")
                         .HasColumnType("int");
@@ -66,14 +67,15 @@ namespace TargetsRest.Migrations
                     b.Property<int>("AgentId")
                         .HasColumnType("int");
 
-                    b.Property<int>("MissionStatus")
-                        .HasColumnType("int");
+                    b.Property<string>("MissionStatus")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<int>("TargetId")
                         .HasColumnType("int");
 
-                    b.Property<DateTime>("TimeLeft")
-                        .HasColumnType("datetime2");
+                    b.Property<double>("TimeLeft")
+                        .HasColumnType("float");
 
                     b.HasKey("Id");
 
@@ -104,8 +106,9 @@ namespace TargetsRest.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int>("Status")
-                        .HasColumnType("int");
+                    b.Property<string>("Status")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<int>("x")
                         .HasColumnType("int");

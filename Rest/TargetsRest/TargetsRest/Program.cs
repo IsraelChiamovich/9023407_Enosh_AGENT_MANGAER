@@ -18,6 +18,8 @@ namespace TargetsRest
             builder.Services.AddSwaggerGen();
             builder.Services.AddDbContext<ApplicationDbContext>();
             builder.Services.AddScoped<ITargetService, TargetService>();
+            builder.Services.AddScoped<IAgentsService, AgentsService>();
+            //builder.Services.AddScoped<IMissionsService, MissionsService>();
 
             var app = builder.Build();
 

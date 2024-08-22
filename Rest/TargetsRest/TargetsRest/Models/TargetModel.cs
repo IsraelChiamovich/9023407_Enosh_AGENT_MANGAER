@@ -7,7 +7,9 @@ namespace TargetsRest.Models
         //חי
         Live,
         //חוסל
-        Eliminated
+        Eliminated,
+        //מצוות למשימה
+        associatedMission
     }
     public class TargetModel
     {

@@ -1,5 +1,4 @@
-﻿using Microsoft.AspNetCore.Authorization;
-using Microsoft.AspNetCore.Http;
+﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using TargetsRest.Dto;
 using TargetsRest.Models;
@@ -9,45 +8,45 @@ namespace TargetsRest.Controllers
 {
     [Route("[controller]")]
     [ApiController]
-    public class targetsController(ITargetService targetService) : ControllerBase
+    public class agentsController(IAgentsService agentsService) : ControllerBase
     {
         [HttpGet("{id}")]
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
-        public async Task<ActionResult<TargetModel>> GetTarget(int id)
+        public async Task<ActionResult<TargetModel>> GetAgent(int id)
         {
-            var target = await targetService.GetTargetByIdAsync(id);
-            if (target == null)
+            var agent = await agentsService.GetAgentByIdAsync(id);
+            if (agent == null)
             {
-                return NotFound("Target not found");
+                return NotFound("Agent not found");
             }
-            return Ok(target);
+            return Ok(agent);
         }
 
         [HttpGet]
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
-        public async Task<ActionResult<List<TargetModel>>> GetAllTargets()
+        public async Task<ActionResult<List<AgentModel>>> GetAllAgents()
         {
-            var targets = await targetService.GetAllTargetsAsync();
-            if (targets == null)
+            var agents = await agentsService.GetAllAgentsAsync();
+            if (agents == null)
             {
-                return NotFound("Targets not found");
+                return NotFound("Agents not found");
             }
-            return Ok(targets);
+            return Ok(agents);
         }
 
         [HttpPost]
         [ProducesResponseType(StatusCodes.Status201Created)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
-        public async Task<ActionResult<TargetModel?>> CreateTarget([FromBody] TargetDto targetDto)
+        public async Task<ActionResult<AgentModel?>> CreateTarget([FromBody] AgentDto agentDto)
         {
             try
             {
-                var targetId = await targetService.CreateTargetAsync(targetDto);
+                var agentId = await agentsService.CreateAgentAsync(agentDto);
                 IdDto idDto = new();
-                idDto.id = targetId;
-                return Created("Target created successfully", idDto);
+                idDto.id = agentId;
+                return Created("Agent created successfully", idDto);
             }
             catch (Exception ex)
             {
@@ -58,12 +57,12 @@ namespace TargetsRest.Controllers
         [HttpPut("{id}/pin")]
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
-        public async Task<ActionResult<TargetModel>> UpdateTargetStarting(int id, [FromBody] PositionDto positionDto)
+        public async Task<ActionResult<AgentModel>> UpdateAgentStarting(int id, [FromBody] PositionDto positionDto)
         {
             try
             {
-                var updatedTarget = await targetService.DeterminingAStartingPosition(id, positionDto);
-                return Ok(updatedTarget);
+                var updatedAgent = await agentsService.DeterminingAStartingPosition(id, positionDto);
+                return Ok(updatedAgent);
             }
             catch (Exception ex)
             {
@@ -75,12 +74,12 @@ namespace TargetsRest.Controllers
         /*[Authorize]*/
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
-        public async Task<ActionResult> UpdateMoveTarget(int id, [FromBody] MoveDto moveDto)
+        public async Task<ActionResult> UpdateMoveAgent(int id, [FromBody] MoveDto moveDto)
         {
             try
             {
-                var newPossitionawait = await targetService.MoveTarget(id, moveDto);
-                return Ok(newPossitionawait);
+                var newPossition = await agentsService.MoveAgent(id, moveDto);
+                return Ok(newPossition);
             }
             catch (Exception ex)
             {

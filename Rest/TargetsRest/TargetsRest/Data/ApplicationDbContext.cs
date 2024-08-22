@@ -24,6 +24,21 @@ namespace TargetsRest.Data
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
+            modelBuilder.Entity<AgentModel>()
+                .Property(x => x.Status)
+                .HasConversion<string>()
+                .IsRequired();
+
+            modelBuilder.Entity<TargetModel>()
+                .Property(x => x.Status)
+                .HasConversion<string>()
+                .IsRequired();
+
+            modelBuilder.Entity<MissionModel>()
+                .Property(x => x.MissionStatus)
+                .HasConversion<string>()
+                .IsRequired();
+
             modelBuilder.Entity<MissionModel>()
                 .HasOne(m => m.Agent)
                 .WithMany()

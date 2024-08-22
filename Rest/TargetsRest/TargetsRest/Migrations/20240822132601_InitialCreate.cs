@@ -21,7 +21,7 @@ namespace TargetsRest.Migrations
                     ImageLink = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     x = table.Column<int>(type: "int", nullable: false),
                     y = table.Column<int>(type: "int", nullable: false),
-                    Status = table.Column<int>(type: "int", nullable: false)
+                    Status = table.Column<string>(type: "nvarchar(max)", nullable: false)
                 },
                 constraints: table =>
                 {
@@ -39,7 +39,7 @@ namespace TargetsRest.Migrations
                     ImageLink = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     x = table.Column<int>(type: "int", nullable: false),
                     y = table.Column<int>(type: "int", nullable: false),
-                    Status = table.Column<int>(type: "int", nullable: false)
+                    Status = table.Column<string>(type: "nvarchar(max)", nullable: false)
                 },
                 constraints: table =>
                 {
@@ -54,9 +54,9 @@ namespace TargetsRest.Migrations
                         .Annotation("SqlServer:Identity", "1, 1"),
                     AgentId = table.Column<int>(type: "int", nullable: false),
                     TargetId = table.Column<int>(type: "int", nullable: false),
-                    TimeLeft = table.Column<DateTime>(type: "datetime2", nullable: false),
+                    TimeLeft = table.Column<double>(type: "float", nullable: false),
                     ActualTime = table.Column<DateTime>(type: "datetime2", nullable: false),
-                    MissionStatus = table.Column<int>(type: "int", nullable: false)
+                    MissionStatus = table.Column<string>(type: "nvarchar(max)", nullable: false)
                 },
                 constraints: table =>
                 {
