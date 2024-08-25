@@ -3,24 +3,36 @@
   "WorkspaceRootPath": "C:\\Users\\user\\Desktop\\idf kodcode\\c#\\Final exam project\\Mvc\\TargetsMvc\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{33DE0008-07C9-46E2-AA93-BFAB499B8B67}|TargetsMvc\\TargetsMvc.csproj|c:\\users\\user\\desktop\\idf kodcode\\c#\\final exam project\\mvc\\targetsmvc\\targetsmvc\\controllers\\missionscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{33DE0008-07C9-46E2-AA93-BFAB499B8B67}|TargetsMvc\\TargetsMvc.csproj|solutionrelative:targetsmvc\\controllers\\missionscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{33DE0008-07C9-46E2-AA93-BFAB499B8B67}|TargetsMvc\\TargetsMvc.csproj|c:\\users\\user\\desktop\\idf kodcode\\c#\\final exam project\\mvc\\targetsmvc\\targetsmvc\\views\\missions\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{33DE0008-07C9-46E2-AA93-BFAB499B8B67}|TargetsMvc\\TargetsMvc.csproj|solutionrelative:targetsmvc\\views\\missions\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{33DE0008-07C9-46E2-AA93-BFAB499B8B67}|TargetsMvc\\TargetsMvc.csproj|c:\\users\\user\\desktop\\idf kodcode\\c#\\final exam project\\mvc\\targetsmvc\\targetsmvc\\controllers\\targetscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{33DE0008-07C9-46E2-AA93-BFAB499B8B67}|TargetsMvc\\TargetsMvc.csproj|solutionrelative:targetsmvc\\controllers\\targetscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{33DE0008-07C9-46E2-AA93-BFAB499B8B67}|TargetsMvc\\TargetsMvc.csproj|c:\\users\\user\\desktop\\idf kodcode\\c#\\final exam project\\mvc\\targetsmvc\\targetsmvc\\controllers\\missionscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{33DE0008-07C9-46E2-AA93-BFAB499B8B67}|TargetsMvc\\TargetsMvc.csproj|solutionrelative:targetsmvc\\controllers\\missionscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{33DE0008-07C9-46E2-AA93-BFAB499B8B67}|TargetsMvc\\TargetsMvc.csproj|c:\\users\\user\\desktop\\idf kodcode\\c#\\final exam project\\mvc\\targetsmvc\\targetsmvc\\controllers\\agentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{33DE0008-07C9-46E2-AA93-BFAB499B8B67}|TargetsMvc\\TargetsMvc.csproj|solutionrelative:targetsmvc\\controllers\\agentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{33DE0008-07C9-46E2-AA93-BFAB499B8B67}|TargetsMvc\\TargetsMvc.csproj|c:\\users\\user\\desktop\\idf kodcode\\c#\\final exam project\\mvc\\targetsmvc\\targetsmvc\\dto\\logindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{33DE0008-07C9-46E2-AA93-BFAB499B8B67}|TargetsMvc\\TargetsMvc.csproj|solutionrelative:targetsmvc\\dto\\logindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{33DE0008-07C9-46E2-AA93-BFAB499B8B67}|TargetsMvc\\TargetsMvc.csproj|c:\\users\\user\\desktop\\idf kodcode\\c#\\final exam project\\mvc\\targetsmvc\\targetsmvc\\controllers\\targetscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{33DE0008-07C9-46E2-AA93-BFAB499B8B67}|TargetsMvc\\TargetsMvc.csproj|solutionrelative:targetsmvc\\controllers\\targetscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{33DE0008-07C9-46E2-AA93-BFAB499B8B67}|TargetsMvc\\TargetsMvc.csproj|c:\\users\\user\\desktop\\idf kodcode\\c#\\final exam project\\mvc\\targetsmvc\\targetsmvc\\views\\missions\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{33DE0008-07C9-46E2-AA93-BFAB499B8B67}|TargetsMvc\\TargetsMvc.csproj|solutionrelative:targetsmvc\\views\\missions\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{33DE0008-07C9-46E2-AA93-BFAB499B8B67}|TargetsMvc\\TargetsMvc.csproj|c:\\users\\user\\desktop\\idf kodcode\\c#\\final exam project\\mvc\\targetsmvc\\targetsmvc\\controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{33DE0008-07C9-46E2-AA93-BFAB499B8B67}|TargetsMvc\\TargetsMvc.csproj|solutionrelative:targetsmvc\\controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{33DE0008-07C9-46E2-AA93-BFAB499B8B67}|TargetsMvc\\TargetsMvc.csproj|c:\\users\\user\\desktop\\idf kodcode\\c#\\final exam project\\mvc\\targetsmvc\\targetsmvc\\views\\targets\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{33DE0008-07C9-46E2-AA93-BFAB499B8B67}|TargetsMvc\\TargetsMvc.csproj|solutionrelative:targetsmvc\\views\\targets\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{33DE0008-07C9-46E2-AA93-BFAB499B8B67}|TargetsMvc\\TargetsMvc.csproj|c:\\users\\user\\desktop\\idf kodcode\\c#\\final exam project\\mvc\\targetsmvc\\targetsmvc\\views\\agents\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{33DE0008-07C9-46E2-AA93-BFAB499B8B67}|TargetsMvc\\TargetsMvc.csproj|solutionrelative:targetsmvc\\views\\agents\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{33DE0008-07C9-46E2-AA93-BFAB499B8B67}|TargetsMvc\\TargetsMvc.csproj|c:\\users\\user\\desktop\\idf kodcode\\c#\\final exam project\\mvc\\targetsmvc\\targetsmvc\\dto\\logindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{33DE0008-07C9-46E2-AA93-BFAB499B8B67}|TargetsMvc\\TargetsMvc.csproj|solutionrelative:targetsmvc\\dto\\logindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{33DE0008-07C9-46E2-AA93-BFAB499B8B67}|TargetsMvc\\TargetsMvc.csproj|c:\\users\\user\\desktop\\idf kodcode\\c#\\final exam project\\mvc\\targetsmvc\\targetsmvc\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -29,10 +41,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{33DE0008-07C9-46E2-AA93-BFAB499B8B67}|TargetsMvc\\TargetsMvc.csproj|c:\\users\\user\\desktop\\idf kodcode\\c#\\final exam project\\mvc\\targetsmvc\\targetsmvc\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{33DE0008-07C9-46E2-AA93-BFAB499B8B67}|TargetsMvc\\TargetsMvc.csproj|solutionrelative:targetsmvc\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{33DE0008-07C9-46E2-AA93-BFAB499B8B67}|TargetsMvc\\TargetsMvc.csproj|c:\\users\\user\\desktop\\idf kodcode\\c#\\final exam project\\mvc\\targetsmvc\\targetsmvc\\views\\targets\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{33DE0008-07C9-46E2-AA93-BFAB499B8B67}|TargetsMvc\\TargetsMvc.csproj|solutionrelative:targetsmvc\\views\\targets\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{33DE0008-07C9-46E2-AA93-BFAB499B8B67}|TargetsMvc\\TargetsMvc.csproj|c:\\users\\user\\desktop\\idf kodcode\\c#\\final exam project\\mvc\\targetsmvc\\targetsmvc\\dto\\missiondto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -45,10 +53,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{33DE0008-07C9-46E2-AA93-BFAB499B8B67}|TargetsMvc\\TargetsMvc.csproj|c:\\users\\user\\desktop\\idf kodcode\\c#\\final exam project\\mvc\\targetsmvc\\targetsmvc\\dto\\agentdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{33DE0008-07C9-46E2-AA93-BFAB499B8B67}|TargetsMvc\\TargetsMvc.csproj|solutionrelative:targetsmvc\\dto\\agentdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{33DE0008-07C9-46E2-AA93-BFAB499B8B67}|TargetsMvc\\TargetsMvc.csproj|c:\\users\\user\\desktop\\idf kodcode\\c#\\final exam project\\mvc\\targetsmvc\\targetsmvc\\views\\agents\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{33DE0008-07C9-46E2-AA93-BFAB499B8B67}|TargetsMvc\\TargetsMvc.csproj|solutionrelative:targetsmvc\\views\\agents\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{33DE0008-07C9-46E2-AA93-BFAB499B8B67}|TargetsMvc\\TargetsMvc.csproj|c:\\users\\user\\desktop\\idf kodcode\\c#\\final exam project\\mvc\\targetsmvc\\targetsmvc\\viewmodels\\missionvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -86,85 +90,37 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "TargetDto.cs",
-              "DocumentMoniker": "C:\\Users\\user\\Desktop\\idf kodcode\\c#\\Final exam project\\Mvc\\TargetsMvc\\TargetsMvc\\Dto\\TargetDto.cs",
-              "RelativeDocumentMoniker": "TargetsMvc\\Dto\\TargetDto.cs",
-              "ToolTip": "C:\\Users\\user\\Desktop\\idf kodcode\\c#\\Final exam project\\Mvc\\TargetsMvc\\TargetsMvc\\Dto\\TargetDto.cs",
-              "RelativeToolTip": "TargetsMvc\\Dto\\TargetDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAFAAAAAAAAAA==",
+              "DocumentIndex": 4,
+              "Title": "LoginController.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\idf kodcode\\c#\\Final exam project\\Mvc\\TargetsMvc\\TargetsMvc\\Controllers\\LoginController.cs",
+              "RelativeDocumentMoniker": "TargetsMvc\\Controllers\\LoginController.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\idf kodcode\\c#\\Final exam project\\Mvc\\TargetsMvc\\TargetsMvc\\Controllers\\LoginController.cs",
+              "RelativeToolTip": "TargetsMvc\\Controllers\\LoginController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-25T09:42:00.41Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\user\\Desktop\\idf kodcode\\c#\\Final exam project\\Mvc\\TargetsMvc\\TargetsMvc\\Views\\Agents\\Index.cshtml",
-              "RelativeDocumentMoniker": "TargetsMvc\\Views\\Agents\\Index.cshtml",
-              "ToolTip": "C:\\Users\\user\\Desktop\\idf kodcode\\c#\\Final exam project\\Mvc\\TargetsMvc\\TargetsMvc\\Views\\Agents\\Index.cshtml",
-              "RelativeToolTip": "TargetsMvc\\Views\\Agents\\Index.cshtml",
-              "ViewState": "AgIAABQAAAAAAAAAAAAAAC0AAAA8AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-08-25T09:19:03.224Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "TargetsController.cs",
-              "DocumentMoniker": "C:\\Users\\user\\Desktop\\idf kodcode\\c#\\Final exam project\\Mvc\\TargetsMvc\\TargetsMvc\\Controllers\\TargetsController.cs",
-              "RelativeDocumentMoniker": "TargetsMvc\\Controllers\\TargetsController.cs",
-              "ToolTip": "C:\\Users\\user\\Desktop\\idf kodcode\\c#\\Final exam project\\Mvc\\TargetsMvc\\TargetsMvc\\Controllers\\TargetsController.cs",
-              "RelativeToolTip": "TargetsMvc\\Controllers\\TargetsController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAANAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-25T08:49:38.898Z",
+              "WhenOpened": "2024-08-25T14:10:06.671Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "AgentDto.cs",
-              "DocumentMoniker": "C:\\Users\\user\\Desktop\\idf kodcode\\c#\\Final exam project\\Mvc\\TargetsMvc\\TargetsMvc\\Dto\\AgentDto.cs",
-              "RelativeDocumentMoniker": "TargetsMvc\\Dto\\AgentDto.cs",
-              "ToolTip": "C:\\Users\\user\\Desktop\\idf kodcode\\c#\\Final exam project\\Mvc\\TargetsMvc\\TargetsMvc\\Dto\\AgentDto.cs",
-              "RelativeToolTip": "TargetsMvc\\Dto\\AgentDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAiAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-25T09:00:09.264Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "_Layout.cshtml",
-              "DocumentMoniker": "C:\\Users\\user\\Desktop\\idf kodcode\\c#\\Final exam project\\Mvc\\TargetsMvc\\TargetsMvc\\Views\\Shared\\_Layout.cshtml",
-              "RelativeDocumentMoniker": "TargetsMvc\\Views\\Shared\\_Layout.cshtml",
-              "ToolTip": "C:\\Users\\user\\Desktop\\idf kodcode\\c#\\Final exam project\\Mvc\\TargetsMvc\\TargetsMvc\\Views\\Shared\\_Layout.cshtml",
-              "RelativeToolTip": "TargetsMvc\\Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAiwB4AAAAtAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-08-25T09:19:15.27Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "MissionsController.cs",
               "DocumentMoniker": "C:\\Users\\user\\Desktop\\idf kodcode\\c#\\Final exam project\\Mvc\\TargetsMvc\\TargetsMvc\\Controllers\\MissionsController.cs",
               "RelativeDocumentMoniker": "TargetsMvc\\Controllers\\MissionsController.cs",
               "ToolTip": "C:\\Users\\user\\Desktop\\idf kodcode\\c#\\Final exam project\\Mvc\\TargetsMvc\\TargetsMvc\\Controllers\\MissionsController.cs",
               "RelativeToolTip": "TargetsMvc\\Controllers\\MissionsController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAArAAAAAAAAAA==",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAsAAAA6AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-08-25T08:49:56.297Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 8,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\user\\Desktop\\idf kodcode\\c#\\Final exam project\\Mvc\\TargetsMvc\\TargetsMvc\\Program.cs",
               "RelativeDocumentMoniker": "TargetsMvc\\Program.cs",
@@ -176,7 +132,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 15,
               "Title": "AgentVM.cs",
               "DocumentMoniker": "C:\\Users\\user\\Desktop\\idf kodcode\\c#\\Final exam project\\Mvc\\TargetsMvc\\TargetsMvc\\ViewModels\\AgentVM.cs",
               "RelativeDocumentMoniker": "TargetsMvc\\ViewModels\\AgentVM.cs",
@@ -194,14 +150,14 @@
               "RelativeDocumentMoniker": "TargetsMvc\\Controllers\\AgentsController.cs",
               "ToolTip": "C:\\Users\\user\\Desktop\\idf kodcode\\c#\\Final exam project\\Mvc\\TargetsMvc\\TargetsMvc\\Controllers\\AgentsController.cs",
               "RelativeToolTip": "TargetsMvc\\Controllers\\AgentsController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-08-25T08:49:19.685Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 10,
               "Title": "MissionDto.cs",
               "DocumentMoniker": "C:\\Users\\user\\Desktop\\idf kodcode\\c#\\Final exam project\\Mvc\\TargetsMvc\\TargetsMvc\\Dto\\MissionDto.cs",
               "RelativeDocumentMoniker": "TargetsMvc\\Dto\\MissionDto.cs",
@@ -213,19 +169,95 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 0,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\user\\Desktop\\idf kodcode\\c#\\Final exam project\\Mvc\\TargetsMvc\\TargetsMvc\\Views\\Missions\\Index.cshtml",
               "RelativeDocumentMoniker": "TargetsMvc\\Views\\Missions\\Index.cshtml",
               "ToolTip": "C:\\Users\\user\\Desktop\\idf kodcode\\c#\\Final exam project\\Mvc\\TargetsMvc\\TargetsMvc\\Views\\Missions\\Index.cshtml",
               "RelativeToolTip": "TargetsMvc\\Views\\Missions\\Index.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEEAAAADAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-08-25T11:47:17.95Z"
+              "WhenOpened": "2024-08-25T11:47:17.95Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
+              "Title": "TargetsController.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\idf kodcode\\c#\\Final exam project\\Mvc\\TargetsMvc\\TargetsMvc\\Controllers\\TargetsController.cs",
+              "RelativeDocumentMoniker": "TargetsMvc\\Controllers\\TargetsController.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\idf kodcode\\c#\\Final exam project\\Mvc\\TargetsMvc\\TargetsMvc\\Controllers\\TargetsController.cs",
+              "RelativeToolTip": "TargetsMvc\\Controllers\\TargetsController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-25T08:49:38.898Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\idf kodcode\\c#\\Final exam project\\Mvc\\TargetsMvc\\TargetsMvc\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "TargetsMvc\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\user\\Desktop\\idf kodcode\\c#\\Final exam project\\Mvc\\TargetsMvc\\TargetsMvc\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "TargetsMvc\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAiwB4AAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-25T09:19:15.27Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "AgentDto.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\idf kodcode\\c#\\Final exam project\\Mvc\\TargetsMvc\\TargetsMvc\\Dto\\AgentDto.cs",
+              "RelativeDocumentMoniker": "TargetsMvc\\Dto\\AgentDto.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\idf kodcode\\c#\\Final exam project\\Mvc\\TargetsMvc\\TargetsMvc\\Dto\\AgentDto.cs",
+              "RelativeToolTip": "TargetsMvc\\Dto\\AgentDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-25T09:00:09.264Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\idf kodcode\\c#\\Final exam project\\Mvc\\TargetsMvc\\TargetsMvc\\Views\\Targets\\Index.cshtml",
+              "RelativeDocumentMoniker": "TargetsMvc\\Views\\Targets\\Index.cshtml",
+              "ToolTip": "C:\\Users\\user\\Desktop\\idf kodcode\\c#\\Final exam project\\Mvc\\TargetsMvc\\TargetsMvc\\Views\\Targets\\Index.cshtml",
+              "RelativeToolTip": "TargetsMvc\\Views\\Targets\\Index.cshtml",
+              "ViewState": "AgIAAC0AAAAAAAAAAAAAADoAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-25T11:41:46.294Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\idf kodcode\\c#\\Final exam project\\Mvc\\TargetsMvc\\TargetsMvc\\Views\\Agents\\Index.cshtml",
+              "RelativeDocumentMoniker": "TargetsMvc\\Views\\Agents\\Index.cshtml",
+              "ToolTip": "C:\\Users\\user\\Desktop\\idf kodcode\\c#\\Final exam project\\Mvc\\TargetsMvc\\TargetsMvc\\Views\\Agents\\Index.cshtml",
+              "RelativeToolTip": "TargetsMvc\\Views\\Agents\\Index.cshtml",
+              "ViewState": "AgIAABgAAAAAAAAAAADwvywAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-25T09:19:03.224Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "TargetDto.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\idf kodcode\\c#\\Final exam project\\Mvc\\TargetsMvc\\TargetsMvc\\Dto\\TargetDto.cs",
+              "RelativeDocumentMoniker": "TargetsMvc\\Dto\\TargetDto.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\idf kodcode\\c#\\Final exam project\\Mvc\\TargetsMvc\\TargetsMvc\\Dto\\TargetDto.cs",
+              "RelativeToolTip": "TargetsMvc\\Dto\\TargetDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-25T09:42:00.41Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
               "Title": "LoginDto.cs",
               "DocumentMoniker": "C:\\Users\\user\\Desktop\\idf kodcode\\c#\\Final exam project\\Mvc\\TargetsMvc\\TargetsMvc\\Dto\\LoginDto.cs",
               "RelativeDocumentMoniker": "TargetsMvc\\Dto\\LoginDto.cs",
@@ -233,12 +265,11 @@
               "RelativeToolTip": "TargetsMvc\\Dto\\LoginDto.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-25T12:48:09.466Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-25T12:48:09.466Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 14,
               "Title": "TargetVM.cs",
               "DocumentMoniker": "C:\\Users\\user\\Desktop\\idf kodcode\\c#\\Final exam project\\Mvc\\TargetsMvc\\TargetsMvc\\ViewModels\\TargetVM.cs",
               "RelativeDocumentMoniker": "TargetsMvc\\ViewModels\\TargetVM.cs",
@@ -250,19 +281,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\user\\Desktop\\idf kodcode\\c#\\Final exam project\\Mvc\\TargetsMvc\\TargetsMvc\\Views\\Targets\\Index.cshtml",
-              "RelativeDocumentMoniker": "TargetsMvc\\Views\\Targets\\Index.cshtml",
-              "ToolTip": "C:\\Users\\user\\Desktop\\idf kodcode\\c#\\Final exam project\\Mvc\\TargetsMvc\\TargetsMvc\\Views\\Targets\\Index.cshtml",
-              "RelativeToolTip": "TargetsMvc\\Views\\Targets\\Index.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-08-25T11:41:46.294Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 13,
               "Title": "MissionVM.cs",
               "DocumentMoniker": "C:\\Users\\user\\Desktop\\idf kodcode\\c#\\Final exam project\\Mvc\\TargetsMvc\\TargetsMvc\\ViewModels\\MissionVM.cs",
               "RelativeDocumentMoniker": "TargetsMvc\\ViewModels\\MissionVM.cs",
@@ -274,7 +293,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 17,
               "Title": "ITargetService.cs",
               "DocumentMoniker": "C:\\Users\\user\\Desktop\\idf kodcode\\c#\\Final exam project\\Mvc\\TargetsMvc\\TargetsMvc\\Services\\ITargetService.cs",
               "RelativeDocumentMoniker": "TargetsMvc\\Services\\ITargetService.cs",
@@ -286,7 +305,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 16,
               "Title": "TargetService.cs",
               "DocumentMoniker": "C:\\Users\\user\\Desktop\\idf kodcode\\c#\\Final exam project\\Mvc\\TargetsMvc\\TargetsMvc\\Services\\TargetService.cs",
               "RelativeDocumentMoniker": "TargetsMvc\\Services\\TargetService.cs",
@@ -298,7 +317,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 18,
               "Title": "AgentService.cs",
               "DocumentMoniker": "C:\\Users\\user\\Desktop\\idf kodcode\\c#\\Final exam project\\Mvc\\TargetsMvc\\TargetsMvc\\Services\\AgentService.cs",
               "RelativeDocumentMoniker": "TargetsMvc\\Services\\AgentService.cs",
@@ -310,7 +329,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 19,
               "Title": "IAgentService.cs",
               "DocumentMoniker": "C:\\Users\\user\\Desktop\\idf kodcode\\c#\\Final exam project\\Mvc\\TargetsMvc\\TargetsMvc\\Services\\IAgentService.cs",
               "RelativeDocumentMoniker": "TargetsMvc\\Services\\IAgentService.cs",

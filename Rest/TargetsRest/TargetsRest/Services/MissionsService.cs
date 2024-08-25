@@ -120,6 +120,8 @@ namespace TargetsRest.Services
 
             await MoveAgentToTarget(mission);
 
+            mission.ActualTime = DateTime.Now.TimeOfDay.TotalMinutes;
+
             if (IsAgentEliminetTarget(mission.Agent, mission.Target))
             {
                 mission.MissionStatus = MissionStatus.ended;
@@ -136,6 +138,7 @@ namespace TargetsRest.Services
 
             await context.SaveChangesAsync();
         }
+
 
         public async Task UpdateMissionToAssingdAsync(int missionId)
         {
@@ -176,8 +179,11 @@ namespace TargetsRest.Services
 
             mission.TimeLeft = PossitionUtils.CalculateDistance(agent.x, agent.y, target.x, target.y) / 5.0;
 
+            mission.ActualTime = DateTime.Now.TimeOfDay.TotalMinutes;
+
             await context.SaveChangesAsync();
         }
+
 
         private void ValidatePosition(int x, int y)
         {

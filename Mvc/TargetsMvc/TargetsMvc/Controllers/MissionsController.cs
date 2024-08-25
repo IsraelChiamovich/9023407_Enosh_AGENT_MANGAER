@@ -6,7 +6,7 @@ namespace TargetsMvc.Controllers
 {
     public class MissionsController(IHttpClientFactory clientFactory) : Controller
     {
-        private readonly string BaseUrl = "https://localhost:7118//Missions";
+        private readonly string BaseUrl = "https://localhost:7118/Missions";
         public async Task<IActionResult> Index()
         {
             var httpClient = clientFactory.CreateClient();

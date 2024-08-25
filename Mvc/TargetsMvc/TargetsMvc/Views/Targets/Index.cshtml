@@ -48,9 +48,9 @@
             <td>
                 @Html.DisplayFor(modelItem => item.Role)
             </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.ImageLink)
-            </td>
+                <td>
+                    <img src="@item.ImageLink" alt="Image" style="max-width: 100px; max-height: 100px;" />
+                </td>
             <td>
                 @Html.DisplayFor(modelItem => item.x)
             </td>
