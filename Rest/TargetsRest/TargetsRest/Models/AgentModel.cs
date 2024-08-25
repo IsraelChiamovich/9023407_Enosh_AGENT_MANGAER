@@ -1,6 +1,4 @@
-﻿
-using System.ComponentModel.DataAnnotations;
-using static System.Net.Mime.MediaTypeNames;
+﻿using System.ComponentModel.DataAnnotations;
 
 namespace TargetsRest.Models
 {

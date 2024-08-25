@@ -89,29 +89,6 @@ namespace TargetsRest.Controllers
 
         }
 
-        /*[HttpPost("create-token")]
-        public ActionResult<string> CreateToken([FromBody] UserModel user)
-        {
-            return Ok(jwtService.GenerateToken(user));
-        }
-
-
-        [HttpPost("auth")]
-        [ProducesResponseType(StatusCodes.Status200OK)]
-        [ProducesResponseType(StatusCodes.Status401Unauthorized)]
-        [ProducesResponseType(StatusCodes.Status404NotFound)]
-        public async Task<ActionResult<string>> Auth([FromBody] LoginDto loginDto)
-        {
-            try
-            {
-                UserModel authenticad = await userService.AuthenticateAsync(loginDto.Email, loginDto.Password);
-                return Ok(jwtService.GenerateToken(authenticad));
-
-            }
-            catch (Exception ex)
-            {
-                return Unauthorized(ex.Message);
-            }
-        }*/
+        
     }
 }
