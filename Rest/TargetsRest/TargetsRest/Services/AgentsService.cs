@@ -40,6 +40,7 @@ namespace TargetsRest.Services
         public async Task<List<AgentModel>> GetAllAgentsAsync() =>
             await context.Agents.ToListAsync();
 
+        
         public async Task<AgentModel> DeterminingAStartingPosition(int id, PositionDto possitionDto)
         {
             var agent = await GetAgentByIdAsync(id);

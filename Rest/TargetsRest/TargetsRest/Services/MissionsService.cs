@@ -154,7 +154,8 @@ namespace TargetsRest.Services
                     mission.Target.Status = TargetStatus.Eliminated;
                     mission.Agent.Status = AgentStatus.dormant;
                     mission.TimeLeft = 0;
-                    mission.ActualTime = 0.0;
+                    var currentTime2 = DateTime.Now.TimeOfDay.TotalMinutes / 60.0;
+                    mission.ActualTime = currentTime2 - mission.ActualTime;
                 }
                 else if (mission.TimeLeft <= 0)
                 {

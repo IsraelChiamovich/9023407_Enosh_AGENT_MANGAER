@@ -221,6 +221,35 @@
     ]
   },
   {
+    "ContainingType": "TargetsRest.Controllers.DeshbordController",
+    "Method": "GetDeshbord",
+    "RelativePath": "Deshbord",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "TargetsRest.Models.DeshbordModel",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 404
+      }
+    ]
+  },
+  {
     "ContainingType": "TargetsRest.Controllers.MissionsController",
     "Method": "GetAllMissions",
     "RelativePath": "Missions",
