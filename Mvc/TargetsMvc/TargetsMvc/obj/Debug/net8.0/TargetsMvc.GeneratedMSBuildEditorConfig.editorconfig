@@ -26,6 +26,10 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Users\user\Desktop\idf kodcode\c#\Final exam project\Mvc\TargetsMvc\TargetsMvc
 build_property._RazorSourceGeneratorDebug = 
 
+[C:/Users/user/Desktop/idf kodcode/c\#/Final exam project/Mvc/TargetsMvc/TargetsMvc/Views/Agents/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWdlbnRzXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/user/Desktop/idf kodcode/c\#/Final exam project/Mvc/TargetsMvc/TargetsMvc/Views/Agents/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWdlbnRzXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
@@ -48,6 +52,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/user/Desktop/idf kodcode/c\#/Final exam project/Mvc/TargetsMvc/TargetsMvc/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/user/Desktop/idf kodcode/c\#/Final exam project/Mvc/TargetsMvc/TargetsMvc/Views/Targets/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGFyZ2V0c1xEZXRhaWxzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/user/Desktop/idf kodcode/c\#/Final exam project/Mvc/TargetsMvc/TargetsMvc/Views/Targets/Index.cshtml]

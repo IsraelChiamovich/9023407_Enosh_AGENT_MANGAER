@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "3R2lVkFJ+aS0h/gJbn+lDCMOu0J1OJuNMg5S6iwKHgo=",
+  "Hash": "nMCWTQQlDR8egJ71dplY7ukFC2Voso1Ip3MwcJ+jqWw=",
   "Source": "TargetsMvc",
   "BasePath": "_content/TargetsMvc",
   "Mode": "Default",
@@ -1193,6 +1193,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Identity": "C:\\Users\\user\\Desktop\\idf kodcode\\c#\\Final exam project\\Mvc\\TargetsMvc\\TargetsMvc\\wwwroot\\logoMosad.png",
+      "SourceId": "TargetsMvc",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\user\\Desktop\\idf kodcode\\c#\\Final exam project\\Mvc\\TargetsMvc\\TargetsMvc\\wwwroot\\",
+      "BasePath": "_content/TargetsMvc",
+      "RelativePath": "logoMosad.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\logoMosad.png"
     }
   ]
 }

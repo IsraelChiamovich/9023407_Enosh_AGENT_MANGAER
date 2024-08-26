@@ -24,7 +24,7 @@ namespace TargetsRest
             builder.Services.AddScoped<IAgentsService, AgentsService>();
             builder.Services.AddScoped<IMissionsService, MissionsService>();
             builder.Services.AddScoped<IJwtService, JwtService>();
-
+            
             builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
                 .AddJwtBearer(options =>
                 {

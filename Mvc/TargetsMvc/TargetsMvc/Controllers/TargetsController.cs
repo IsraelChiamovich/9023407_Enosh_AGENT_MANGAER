@@ -6,11 +6,11 @@ namespace TargetsMvc.Controllers
 {
     public class TargetsController(IHttpClientFactory clientFactory) : Controller
     {
-        private readonly string BaseUrl = "https://localhost:7118/targets";
+        private readonly string baseUrl = "https://localhost:7118/targets";
         public async Task<IActionResult> Index()
         {
             var httpClient = clientFactory.CreateClient();
-            var request = new HttpRequestMessage(HttpMethod.Get, BaseUrl);
+            var request = new HttpRequestMessage(HttpMethod.Get, baseUrl);
             var result = await httpClient.SendAsync(request);
             if (result.IsSuccessStatusCode)
             {
@@ -20,6 +20,21 @@ namespace TargetsMvc.Controllers
             }
             return View();
         }
-        
+
+        public async Task<IActionResult> Details(int id)
+        {
+            var httpClient = clientFactory.CreateClient();
+            var request = new HttpRequestMessage(HttpMethod.Get, $"{baseUrl}/{id}");
+            //request.Headers.Authorization = new AuthenticationHeaderValue("Bearer", auth.Token);
+            var result = await httpClient.SendAsync(request);
+            if (result.IsSuccessStatusCode)
+            {
+                var content = await result.Content.ReadAsStringAsync();
+                TargetDto? target = JsonSerializer.Deserialize<TargetDto>(content, new JsonSerializerOptions() { PropertyNameCaseInsensitive = true });
+                return View(target);
+            }
+            return RedirectToAction("Index");
+        }
+
     }
 }

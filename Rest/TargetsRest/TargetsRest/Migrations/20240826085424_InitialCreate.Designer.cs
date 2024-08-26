@@ -11,7 +11,7 @@ using TargetsRest.Data;
 namespace TargetsRest.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20240825143942_InitialCreate")]
+    [Migration("20240826085424_InitialCreate")]
     partial class InitialCreate
     {
         /// <inheritdoc />

@@ -43,6 +43,7 @@ namespace TargetsRest.Controllers
         {
             try
             {
+                await missionsService.FindAgentsAndTargetsToMissionAsync();
                 await missionsService.UpdateAllMissionsAsync();
                 return Ok("Missions updated successfully");
             }
@@ -77,7 +78,7 @@ namespace TargetsRest.Controllers
             try
             {
                 if (missionDto.status == MissionStatus.assigned.ToString())
-                    await missionsService.UpdateMissionToAssingdAsync(id);
+                    await missionsService.UpdateMissionAsync(id);
                 return Ok("updatedMissionStatus");
             }
             catch (Exception ex)

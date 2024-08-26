@@ -1,15 +1,12 @@
-﻿using Microsoft.AspNetCore.Http.HttpResults;
-using Microsoft.EntityFrameworkCore;
-using System.Reflection;
+﻿using Microsoft.EntityFrameworkCore;
 using TargetsRest.Data;
 using TargetsRest.Models;
-using TargetsRest.Utils;
+using System.Globalization;
 
 namespace TargetsRest.Services
 {
     public class MissionsService(ApplicationDbContext context) : IMissionsService
     {
-
         public async Task<List<MissionModel>> GetAllMission()
         {
             var missions = await context.Missions
@@ -27,13 +24,18 @@ namespace TargetsRest.Services
                 .Include(a => a.Target)
                 .FirstOrDefaultAsync(m => m.Id == id);
 
-            if (mission == null) { throw new Exception("The mission does not found"); }
+            if (mission == null)
+            {
+                throw new Exception("Mission not found");
+            }
 
             return mission;
         }
 
-        public async Task<(List<AgentModel> agents, List<TargetModel> targets)> FindAgentsAndTargetsToMissionAsync()
+        public async Task<List<MissionModel>> FindAgentsAndTargetsToMissionAsync()
         {
+            var allMissions = await context.Missions.ToListAsync();
+
             var agents = await context.Agents
                 .Where(a => a.Status == AgentStatus.dormant)
                 .ToListAsync();
@@ -42,30 +44,41 @@ namespace TargetsRest.Services
                 .Where(t => t.Status == TargetStatus.Live)
                 .ToListAsync();
 
-            var relevantMissions = new List<(AgentModel agent, TargetModel target)>();
+            var existingMissions = await context.Missions
+                .Where(m => m.MissionStatus != MissionStatus.ended)
+                .ToListAsync();
 
-            foreach (var agent in agents)
-            {
-                foreach (var target in targets)
+            var missionsToAdd = agents.Zip(targets)
+                .Select(x => (agent: x.First, target: x.Second, distance: CalculateDistance(x.First.x, x.First.y, x.Second.x, x.Second.y)))
+                .Where(x => x.distance < 200)
+                .Where(x => !existingMissions.Any(m => m.AgentId == x.agent.Id && m.TargetId == x.target.Id))
+                .Select(x => new MissionModel()
                 {
-                    var distance = PossitionUtils.CalculateDistance(agent.x, agent.y, target.x, target.y);
-                    if (distance < 200 && !await CheckIfMissionExists(agent, target))
-                    {
-                        relevantMissions.Add((agent, target));
-                        await CreateMissionAsync(agent, target);
-                    }
-                }
-            }
+                    AgentId = x.agent.Id,
+                    TargetId = x.target.Id,
+                    Agent = x.agent,
+                    Target = x.target,
+                    TimeLeft = Math.Round(x.distance / 5.0, 2),
+                    ActualTime = 0.0,
+                    MissionStatus = MissionStatus.Proposal
+                })
+                .ToList();
 
-            var agentsInMissions = relevantMissions.Select(a => a.agent).Distinct().ToList();
-            var targetsInMissions = relevantMissions.Select(a => a.target).Distinct().ToList();
-            return (agentsInMissions, targetsInMissions);
+            await context.Missions.AddRangeAsync(missionsToAdd);
+            await context.SaveChangesAsync();
+
+            return missionsToAdd;
         }
 
         public async Task<MissionModel?> CreateMissionAsync(AgentModel agent, TargetModel target)
         {
-            var distance = PossitionUtils.CalculateDistance(agent.x, agent.y, target.x, target.y);
-            var timeLeft = distance / 5.0;
+            var distance = CalculateDistance(agent.x, agent.y, target.x, target.y);
+            var timeLeft = Math.Round(distance / 5.0, 2);
+
+            if (await CheckIfMissionExists(agent, target))
+            {
+                throw new Exception("Mission with the same agent and target already exists.");
+            }
 
             var mission = new MissionModel
             {
@@ -74,7 +87,7 @@ namespace TargetsRest.Services
                 Agent = agent,
                 Target = target,
                 TimeLeft = timeLeft,
-                ActualTime = DateTime.Now.TimeOfDay.TotalMinutes,
+                ActualTime = 0.0,
                 MissionStatus = MissionStatus.Proposal,
             };
 
@@ -88,16 +101,23 @@ namespace TargetsRest.Services
             var mission = await GetMissionById(missionId);
 
             var agent = await context.Agents.FindAsync(agentId);
-            if (agent == null) { throw new Exception("The agent does not found"); }
+            if (agent == null)
+            {
+                throw new Exception("Agent not found");
+            }
 
             var existingMissions = await context.Missions
                 .Where(x => x.AgentId == agent.Id && x.MissionStatus == MissionStatus.assigned)
                 .ToListAsync();
 
-            if (existingMissions.Any()) { throw new Exception("The agent is already assigned to a mission"); }
+            if (existingMissions.Any())
+            {
+                throw new Exception("Agent is already assigned to a mission");
+            }
 
             mission.MissionStatus = MissionStatus.assigned;
             agent.Status = AgentStatus.activity;
+            mission.ActualTime = DateTime.Now.TimeOfDay.TotalMinutes / 60.0;
 
             await context.SaveChangesAsync();
         }
@@ -116,29 +136,41 @@ namespace TargetsRest.Services
         {
             var mission = await GetMissionById(missionId);
 
-            if (mission == null) { throw new Exception("The mission does not found"); }
-
-            await MoveAgentToTarget(mission);
-
-            mission.ActualTime = DateTime.Now.TimeOfDay.TotalMinutes;
-
-            if (IsAgentEliminetTarget(mission.Agent, mission.Target))
+            if (mission == null)
             {
-                mission.MissionStatus = MissionStatus.ended;
-                mission.Target.Status = TargetStatus.Eliminated;
-                mission.Agent.Status = AgentStatus.dormant;
-                mission.TimeLeft = 0;
-            }
-            else if (mission.TimeLeft <= 0)
-            {
-                mission.Agent.Status = AgentStatus.dormant;
-                mission.Target.Status = TargetStatus.Live;
-                context.Missions.Remove(mission);
+                throw new Exception("Mission not found");
             }
 
-            await context.SaveChangesAsync();
+            if (mission.MissionStatus == MissionStatus.assigned)
+            {
+                var currentTime = DateTime.Now.TimeOfDay.TotalMinutes / 60.0;
+                mission.ActualTime = currentTime - mission.ActualTime;
+
+                await MoveAgentToTarget(mission);
+
+                if (IsAgentEliminetTarget(mission.Agent, mission.Target))
+                {
+                    mission.MissionStatus = MissionStatus.ended;
+                    mission.Target.Status = TargetStatus.Eliminated;
+                    mission.Agent.Status = AgentStatus.dormant;
+                    mission.TimeLeft = 0;
+                    mission.ActualTime = 0.0;
+                }
+                else if (mission.TimeLeft <= 0)
+                {
+                    mission.Agent.Status = AgentStatus.dormant;
+                    mission.Target.Status = TargetStatus.Live;
+                    context.Missions.Remove(mission);
+                    mission.ActualTime = 0.0; 
+                }
+
+                await context.SaveChangesAsync();
+            }
+            else
+            {
+                mission.ActualTime = 0.0; 
+            }
         }
-
 
         public async Task UpdateMissionToAssingdAsync(int missionId)
         {
@@ -150,6 +182,7 @@ namespace TargetsRest.Services
             }
 
             mission.MissionStatus = MissionStatus.assigned;
+            mission.ActualTime = DateTime.Now.TimeOfDay.TotalMinutes / 60.0; 
 
             await context.SaveChangesAsync();
         }
@@ -177,13 +210,10 @@ namespace TargetsRest.Services
 
             ValidatePosition(agent.x, agent.y);
 
-            mission.TimeLeft = PossitionUtils.CalculateDistance(agent.x, agent.y, target.x, target.y) / 5.0;
-
-            mission.ActualTime = DateTime.Now.TimeOfDay.TotalMinutes;
+            mission.TimeLeft = Math.Round(CalculateDistance(agent.x, agent.y, target.x, target.y) / 5.0, 2);
 
             await context.SaveChangesAsync();
         }
-
 
         private void ValidatePosition(int x, int y)
         {
@@ -191,6 +221,11 @@ namespace TargetsRest.Services
             {
                 throw new Exception("Position is out of range");
             }
+        }
+
+        private double CalculateDistance(int x1, int y1, int x2, int y2)
+        {
+            return Math.Sqrt(Math.Pow(x2 - x1, 2) + Math.Pow(y2 - y1, 2));
         }
     }
 }
