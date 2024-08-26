@@ -78,8 +78,9 @@ namespace TargetsRest.Controllers
             try
             {
                 if (missionDto.status == MissionStatus.assigned.ToString())
-                    await missionsService.UpdateMissionAsync(id);
-                return Ok("updatedMissionStatus");
+                    await missionsService.UpdateMissionToAssingdAsync(id);
+                    await missionsService.UpdateAllMissionsAsync();
+                return Ok("Updated mission status to assigned");
             }
             catch (Exception ex)
             {

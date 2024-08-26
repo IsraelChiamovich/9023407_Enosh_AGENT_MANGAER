@@ -1,3 +1,5 @@
+using TargetsMvc.Dto;
+
 namespace TargetsMvc
 {
     public class Program
@@ -9,6 +11,7 @@ namespace TargetsMvc
             // Add services to the container.
             builder.Services.AddControllersWithViews();
             builder.Services.AddHttpClient();
+            builder.Services.AddSingleton<TokenDto>();
             var app = builder.Build();
 
             // Configure the HTTP request pipeline.

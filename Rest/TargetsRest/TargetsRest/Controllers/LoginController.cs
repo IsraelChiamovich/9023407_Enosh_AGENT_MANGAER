@@ -7,26 +7,30 @@ using TargetsRest.Services;
 
 namespace TargetsRest.Controllers
 {
-    [Route("api/[controller]")]
+    [Route("[controller]")]
     [ApiController]
-    public class LoginController(IJwtService jwtService) : ControllerBase
+    public class LoginController : ControllerBase
     {
-        private static readonly ImmutableList<string> allowedNames = [
-            "enosh", "avi"
-        ];
+        private static readonly ImmutableList<string> allowedServersNames = ImmutableList.Create("SimulationServer", "APIServer");
+        private readonly IJwtService _jwtService;
 
-        [HttpPost]
-        public ActionResult<string> Login([FromBody] LoginDto loginDto) =>
-            allowedNames.Contains(loginDto.id)
-                ? Ok(jwtService.CreateToken(loginDto.id))
-                : BadRequest();
-
-        [Authorize]
-        [HttpGet("protected")]
-        public ActionResult<string> Protected()
+        public LoginController(IJwtService jwtService)
         {
-            return Ok("Yay!!");
+            _jwtService = jwtService;
         }
 
+        [HttpPost]
+        [AllowAnonymous] 
+        public ActionResult<string> Login([FromBody] LoginDto loginDto)
+        {
+            if (allowedServersNames.Contains(loginDto.id))
+            {
+                var token = _jwtService.CreateToken(loginDto.id);
+                return Ok(token);
+            }
+            return BadRequest("No good");
+        }
+
+        
     }
 }

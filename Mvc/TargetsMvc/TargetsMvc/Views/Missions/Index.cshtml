@@ -6,9 +6,6 @@
 
 <h1>Missions</h1>
 
-@* <p>
-    <a asp-action="Create">Create New</a>
-</p> *@
 <table class="table">
     <thead>
         <tr>
@@ -34,32 +31,36 @@
         </tr>
     </thead>
     <tbody>
-@foreach (var item in Model) {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.Id)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.AgentId)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.TargetId)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.TimeLeft)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.ActualTime)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.MissionStatus)
-            </td>
-            <td>
-                @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
-                @Html.ActionLink("Details", "Details", new { id=item.Id  }) |
-                @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })
-            </td>
-        </tr>
-}
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Id)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.AgentId)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.TargetId)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.TimeLeft)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.ActualTime)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.MissionStatus)
+                </td>
+                <td>
+                    @Html.ActionLink("Details", "Details", new { id = item.Id }) |
+                    @if (item.MissionStatus == TargetsMvc.Dto.MissionStatus.Proposal)
+                    {
+                        
+                        @Html.ActionLink("Assigned", "Assigned", new { id = item.Id })
+                    }
+                </td>
+            </tr>
+        }
     </tbody>
 </table>

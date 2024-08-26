@@ -10,6 +10,7 @@ namespace TargetsRest.Services
         Task<AgentModel?> GetAgentByIdAsync(int id);
         Task<List<AgentModel>> GetAllAgentsAsync();
         Task<AgentModel?> MoveAgent(int agentId, MoveDto direction);
+        Task<MissionModel?> GetMissionByAgentAsync(int AgentId);
 
         //Task<UserModel> AuthenticateAsync(string email, string password);
     }

@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using TargetsRest.Dto;
 using TargetsRest.Models;
@@ -10,6 +11,7 @@ namespace TargetsRest.Controllers
     [ApiController]
     public class agentsController(IAgentsService agentsService) : ControllerBase
     {
+        [Authorize]
         [HttpGet("{id}")]
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
@@ -22,7 +24,19 @@ namespace TargetsRest.Controllers
             }
             return Ok(agent);
         }
-
+        [Authorize]
+        [HttpGet("{id}/Missions")]
+        [ProducesResponseType(StatusCodes.Status200OK)]
+        [ProducesResponseType(StatusCodes.Status404NotFound)]
+        public async Task<ActionResult<TargetModel>> GetMissionsByAgent(int id)
+        {
+            var MissionByAgent = await agentsService.GetMissionByAgentAsync(id);
+            if (MissionByAgent == null)
+            {
+                return NotFound("Agent not found");
+            }
+            return Ok(MissionByAgent);
+        }
         [HttpGet]
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
@@ -70,8 +84,8 @@ namespace TargetsRest.Controllers
             }
         }
 
+        [Authorize]
         [HttpPut("{id}/move")]
-        /*[Authorize]*/
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
         public async Task<ActionResult> UpdateMoveAgent(int id, [FromBody] MoveDto moveDto)
@@ -88,29 +102,5 @@ namespace TargetsRest.Controllers
 
         }
 
-        /*[HttpPost("create-token")]
-        public ActionResult<string> CreateToken([FromBody] UserModel user)
-        {
-            return Ok(jwtService.GenerateToken(user));
-        }
-
-
-        [HttpPost("auth")]
-        [ProducesResponseType(StatusCodes.Status200OK)]
-        [ProducesResponseType(StatusCodes.Status401Unauthorized)]
-        [ProducesResponseType(StatusCodes.Status404NotFound)]
-        public async Task<ActionResult<string>> Auth([FromBody] LoginDto loginDto)
-        {
-            try
-            {
-                UserModel authenticad = await userService.AuthenticateAsync(loginDto.Email, loginDto.Password);
-                return Ok(jwtService.GenerateToken(authenticad));
-
-            }
-            catch (Exception ex)
-            {
-                return Unauthorized(ex.Message);
-            }
-        }*/
     }
 }

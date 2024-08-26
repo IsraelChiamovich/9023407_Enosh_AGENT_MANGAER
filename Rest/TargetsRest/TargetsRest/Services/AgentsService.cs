@@ -2,6 +2,7 @@
 using TargetsRest.Data;
 using TargetsRest.Dto;
 using TargetsRest.Models;
+using TargetsRest.Utils;
 
 namespace TargetsRest.Services
 {
@@ -33,6 +34,50 @@ namespace TargetsRest.Services
             return agent.Id;
 
         }
+
+        //בדיקה בעת הוספה
+        public async Task CreateMissionForAgentAsync(AgentModel agent)
+        {
+            var targets = await context.Targets
+                .Where(t => t.Status == TargetStatus.Live)
+                .ToListAsync();
+
+            var missionsToAdd = targets
+                .Select(t => new
+                {
+                    Target = t,
+                    Distance = DistanceCal.CalculateDistance(agent.x, agent.y, t.x, t.y)
+                })
+                .Where(x => x.Distance < 200)
+                .Select(x => new MissionModel
+                {
+                    AgentId = agent.Id,
+                    TargetId = x.Target.Id,
+                    Agent = agent,
+                    Target = x.Target,
+                    TimeLeft = Math.Round(x.Distance / 5.0, 2),
+                    ActualTime = 0.0,
+                    MissionStatus = MissionStatus.Proposal
+                })
+                .ToList();
+
+            if (missionsToAdd.Any())
+            {
+                await context.Missions.AddRangeAsync(missionsToAdd);
+                await context.SaveChangesAsync();
+            }
+        }
+
+        public async Task<MissionModel?> GetMissionByAgentAsync(int AgentId)
+        {
+            
+            return await context.Missions
+                .Include(a => a.Agent)
+                .Include(t => t.Target)
+                .Where(m => m.AgentId == AgentId).FirstOrDefaultAsync();
+
+        }
+
 
         public async Task<AgentModel?> GetAgentByIdAsync(int id) =>
             await context.Agents.FindAsync(id);

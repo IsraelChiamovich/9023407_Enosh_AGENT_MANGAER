@@ -2,6 +2,8 @@
 using TargetsRest.Data;
 using TargetsRest.Models;
 using System.Globalization;
+using TargetsRest.Utils;
+using Microsoft.Extensions.Logging;
 
 namespace TargetsRest.Services
 {
@@ -49,7 +51,7 @@ namespace TargetsRest.Services
                 .ToListAsync();
 
             var missionsToAdd = agents.Zip(targets)
-                .Select(x => (agent: x.First, target: x.Second, distance: CalculateDistance(x.First.x, x.First.y, x.Second.x, x.Second.y)))
+                .Select(x => (agent: x.First, target: x.Second, distance: DistanceCal.CalculateDistance(x.First.x, x.First.y, x.Second.x, x.Second.y)))
                 .Where(x => x.distance < 200)
                 .Where(x => !existingMissions.Any(m => m.AgentId == x.agent.Id && m.TargetId == x.target.Id))
                 .Select(x => new MissionModel()
@@ -72,7 +74,7 @@ namespace TargetsRest.Services
 
         public async Task<MissionModel?> CreateMissionAsync(AgentModel agent, TargetModel target)
         {
-            var distance = CalculateDistance(agent.x, agent.y, target.x, target.y);
+            var distance = DistanceCal.CalculateDistance(agent.x, agent.y, target.x, target.y);
             var timeLeft = Math.Round(distance / 5.0, 2);
 
             if (await CheckIfMissionExists(agent, target))
@@ -143,8 +145,12 @@ namespace TargetsRest.Services
 
             if (mission.MissionStatus == MissionStatus.assigned)
             {
-                var currentTime = DateTime.Now.TimeOfDay.TotalMinutes / 60.0;
-                mission.ActualTime = currentTime - mission.ActualTime;
+                var currentTime = DateTime.Now.TimeOfDay.TotalMinutes / 60;
+                currentTime = Math.Round(currentTime, 2);
+
+                var timePassed = currentTime - mission.ActualTime;
+
+                mission.ActualTime = Math.Round(timePassed, 2);
 
                 await MoveAgentToTarget(mission);
 
@@ -154,28 +160,32 @@ namespace TargetsRest.Services
                     mission.Target.Status = TargetStatus.Eliminated;
                     mission.Agent.Status = AgentStatus.dormant;
                     mission.TimeLeft = 0;
-                    var currentTime2 = DateTime.Now.TimeOfDay.TotalMinutes / 60.0;
-                    mission.ActualTime = currentTime2 - mission.ActualTime;
+                    mission.ActualTime = Math.Round(timePassed, 2);
+
                 }
                 else if (mission.TimeLeft <= 0)
                 {
                     mission.Agent.Status = AgentStatus.dormant;
                     mission.Target.Status = TargetStatus.Live;
                     context.Missions.Remove(mission);
-                    mission.ActualTime = 0.0; 
+                    mission.ActualTime = 0.0;
                 }
 
                 await context.SaveChangesAsync();
             }
             else
             {
-                mission.ActualTime = 0.0; 
+                mission.ActualTime = Math.Round(mission.ActualTime, 2);
             }
         }
 
+
         public async Task UpdateMissionToAssingdAsync(int missionId)
         {
-            var mission = await GetMissionById(missionId);
+            var mission = await context.Missions
+                .Include(a => a.Agent)
+                .Include(t => t.Target)
+                .Where(m => m.Id == missionId).FirstOrDefaultAsync();
 
             if (mission == null)
             {
@@ -183,7 +193,9 @@ namespace TargetsRest.Services
             }
 
             mission.MissionStatus = MissionStatus.assigned;
-            mission.ActualTime = DateTime.Now.TimeOfDay.TotalMinutes / 60.0; 
+            mission.ActualTime = DateTime.Now.TimeOfDay.TotalMinutes / 60.0;
+            mission.Agent.Status = AgentStatus.activity;
+            mission.Target.Status = TargetStatus.associatedMission;
 
             await context.SaveChangesAsync();
         }
@@ -211,7 +223,7 @@ namespace TargetsRest.Services
 
             ValidatePosition(agent.x, agent.y);
 
-            mission.TimeLeft = Math.Round(CalculateDistance(agent.x, agent.y, target.x, target.y) / 5.0, 2);
+            mission.TimeLeft = Math.Round(DistanceCal.CalculateDistance(agent.x, agent.y, target.x, target.y) / 5.0, 2);
 
             await context.SaveChangesAsync();
         }
@@ -224,9 +236,5 @@ namespace TargetsRest.Services
             }
         }
 
-        private double CalculateDistance(int x1, int y1, int x2, int y2)
-        {
-            return Math.Sqrt(Math.Pow(x2 - x1, 2) + Math.Pow(y2 - y1, 2));
-        }
     }
 }

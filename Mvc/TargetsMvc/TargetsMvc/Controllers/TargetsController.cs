@@ -1,16 +1,19 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using NuGet.Common;
+using System.Net.Http.Headers;
 using System.Text.Json;
 using TargetsMvc.Dto;
 
 namespace TargetsMvc.Controllers
 {
-    public class TargetsController(IHttpClientFactory clientFactory) : Controller
+    public class TargetsController(IHttpClientFactory clientFactory, TokenDto token) : Controller
     {
         private readonly string baseUrl = "https://localhost:7118/targets";
         public async Task<IActionResult> Index()
         {
             var httpClient = clientFactory.CreateClient();
             var request = new HttpRequestMessage(HttpMethod.Get, baseUrl);
+            request.Headers.Authorization = new AuthenticationHeaderValue("Bearer", token.Token);
             var result = await httpClient.SendAsync(request);
             if (result.IsSuccessStatusCode)
             {
@@ -25,7 +28,7 @@ namespace TargetsMvc.Controllers
         {
             var httpClient = clientFactory.CreateClient();
             var request = new HttpRequestMessage(HttpMethod.Get, $"{baseUrl}/{id}");
-            //request.Headers.Authorization = new AuthenticationHeaderValue("Bearer", auth.Token);
+            request.Headers.Authorization = new AuthenticationHeaderValue("Bearer", token.Token);
             var result = await httpClient.SendAsync(request);
             if (result.IsSuccessStatusCode)
             {
