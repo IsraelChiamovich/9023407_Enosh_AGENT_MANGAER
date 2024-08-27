@@ -37,7 +37,7 @@ namespace TargetsMvc.Controllers
             var result = await httpClient.PostAsync($"{baseUrl}", httpContent);
             if (result.IsSuccessStatusCode)
             {
-                _token.Token = await result.Content.ReadAsStringAsync();
+                TokenDto token = new() { Token = await result.Content.ReadAsStringAsync() };
                 return RedirectToAction("Index");
             }
 

@@ -11,7 +11,7 @@ namespace TargetsRest.Controllers
     [ApiController]
     public class agentsController(IAgentsService agentsService) : ControllerBase
     {
-        [Authorize]
+        /*[Authorize]*/
         [HttpGet("{id}")]
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
@@ -24,7 +24,7 @@ namespace TargetsRest.Controllers
             }
             return Ok(agent);
         }
-        [Authorize]
+        /*[Authorize]*/
         [HttpGet("{id}/Missions")]
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
@@ -84,7 +84,7 @@ namespace TargetsRest.Controllers
             }
         }
 
-        [Authorize]
+        /*[Authorize]*/
         [HttpPut("{id}/move")]
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]

@@ -23,7 +23,7 @@ namespace TargetsRest.Controllers
             }
             return Ok(target);
         }
-        [Authorize]
+        /*[Authorize]*/
         [HttpGet]
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
@@ -37,7 +37,7 @@ namespace TargetsRest.Controllers
             return Ok(targets);
         }
 
-        [Authorize]
+        /*[Authorize]*/
         [HttpPost]
         [ProducesResponseType(StatusCodes.Status201Created)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
@@ -56,7 +56,7 @@ namespace TargetsRest.Controllers
             }
         }
 
-        [Authorize]
+        /*[Authorize]*/
         [HttpPut("{id}/pin")]
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
@@ -73,7 +73,7 @@ namespace TargetsRest.Controllers
             }
         }
 
-        [Authorize]
+        /*[Authorize]*/
         [HttpPut("{id}/move")]
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]

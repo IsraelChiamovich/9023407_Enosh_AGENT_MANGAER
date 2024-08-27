@@ -254,7 +254,7 @@
     ],
     "ReturnTypes": [
       {
-        "Type": "System.String",
+        "Type": "TargetsRest.Models.TokenModel",
         "MediaTypes": [
           "text/plain",
           "application/json",
